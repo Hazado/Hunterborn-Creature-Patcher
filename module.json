@@ -1,0 +1,12 @@
+{
+  "id": "hunterbornCreaturePatcher",
+  "name": "Add Mod Creatures to Hunterborn",
+  "author": "Mator, Hazado",
+  "version": "1.07",
+  "released": "6/5/2018",
+  "updated": "7/28/2018",
+  "description": "Adds creature compatibility for other mods to Hunterborn mod.",
+  "requires": ["unifiedPatchingFramework"],
+  "moduleLoader": "UPF",
+  "canHotLoad": true
+}

@@ -1,0 +1,53 @@
+<style>
+    .item-placement .header {
+		display: flex;
+	}
+
+	.item-placement .header .title{
+		flex-grow: 1;
+	}
+
+	.body ul {
+		list-style-type: circle;
+	}
+	
+	.body li {
+		margin: 4px 0;
+	}
+</style>
+
+<section ng-hide="items">
+    <div class="center">
+        <button class="action-btn large" ng-click="loadCreatures()">
+            Find Creatures
+        </button>
+		<button class="action-btn large" ng-click="clearCreatures()">
+            Reset Creatures
+        </button>
+    </div>
+</section>
+<section ng-show="items">
+    <div ng-repeat="(key,value) in items" class="tint-bg medium-border item-placement">
+        <div class="header">
+            <div class="title">
+                <span class="name">{{ key }}</span>
+            </div>
+			<button class="action-btn small" ng-click="value.showNPCS = !value.showNPCS" ng-show="!value.showNPCS">
+				Show NPCs
+			</button>
+			<button class="action-btn small" ng-click="value.showNPCS = !value.showNPCS" ng-show="value.showNPCS">
+				Hide NPCs
+			</button>
+			<select ng-model="value.animalType" ng-options="a for a in animalTypes"></select>
+        </div>
+		<section ng-show="value.showNPCS">
+			<div class="body">
+				<ul>
+					<li ng-repeat="npc in value.npcs">
+						{{npc.name}}
+					</li>
+				</ul>
+			</div>
+		</section>
+    </div>
+</section>
