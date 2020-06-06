@@ -601,14 +601,14 @@ let BloodTypes = function (aiIndex, animalType, jsonRecord, patch) {
 };
 
 let DefaultPeltValues = function (animalType, npc, patch, Pelts) {
-  if (GetDefaultPelt(npc) != undefined) {
-    let peltTemp = xelib.GetWinningOverride(GetDefaultPelt(npc));
     if (!monsterTypes.includes(animalType)) {
       DefaultPeltValuesArray = xelib.GetScript(qustRecords["_DS_Hunterborn"], "_DS_HB_Animals");
     } else {
       DefaultPeltValuesArray = xelib.GetScript(qustRecords["_DS_Hunterborn"], "_DS_HB_Monsters");
     }
     DefaultPeltValuesArrayProperty = xelib.GetScriptProperty(DefaultPeltValuesArray, "DefaultPeltValues");
+  if (GetDefaultPelt(npc) != undefined) {
+    let peltTemp = xelib.GetWinningOverride(GetDefaultPelt(npc));
     xelib.AddArrayItem(DefaultPeltValuesArrayProperty, "Value\\Array of Int32", "", xelib.GetValue(miscRecords[xelib.EditorID(peltTemp)], "DATA\\Value"));
   } else {
     xelib.AddArrayItem(DefaultPeltValuesArrayProperty, "Value\\Array of Int32", "", "0");
@@ -815,11 +815,13 @@ let loadJsonData = function (patchJson, i) {
       allowedVoice.push(jsonData[i][j].voice);
     }
     if (spliceTypes(jsonData[i][j].name, jsonData[i][j].type)) {
-      console.log("Removing duplicate creature: " + jsonData[i][j].name);
+      if (debugging)
+        console.log("Removing duplicate creature: " + jsonData[i][j].name);
       jsonData[i].splice(j, 1);
       j--;
     } else {
-      console.log("Adding creature: " + jsonData[i][j].name);
+      if (debugging)
+        console.log("Adding creature: " + jsonData[i][j].name);
       deathItemNameMatch.push(jsonData[i][j].name);
     }
   }
