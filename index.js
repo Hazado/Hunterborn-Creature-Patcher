@@ -15,6 +15,7 @@ let alchRecords = {};
 let qustRecords = {};
 let Pelts = {};
 let DefaultPelt = {};
+let CheckPatchesRunOnce = false;
 
 let debugging = true;
 
@@ -814,27 +815,32 @@ let loadJsonData = function (patchJson, i) {
       allowedVoice.push(jsonData[i][j].voice);
     }
     if (spliceTypes(jsonData[i][j].name, jsonData[i][j].type)) {
+      console.log("Removing duplicate creature: " + jsonData[i][j].name);
       jsonData[i].splice(j, 1);
       j--;
     } else {
+      console.log("Adding creature: " + jsonData[i][j].name);
       deathItemNameMatch.push(jsonData[i][j].name);
     }
   }
 };
 
 let CheckPatches = function () {
-  i = 0;
-  jsonData = [];
-  let jsonFiles = fh.getFiles(patcherPath, {
-    matching: ['*.json', '!module.json']
-  });
-  jsonFiles.forEach(file => {
-    let tempfile = file.replace(patcherPath + "\\", '').replace('.json', '');
-    if (xelib.FileByName(`${tempfile}.esp`) > 0 || xelib.FileByName(`${tempfile}.esm`) > 0 || xelib.FileByName(`${tempfile}.esl`) > 0) {
-      loadJsonData(file, i);
-      i++;
-    }
-  });
+  if (!CheckPatchesRunOnce) {
+    CheckPatchesRunOnce = true;
+    let i = 0;
+    jsonData = [];
+    let jsonFiles = fh.getFiles(patcherPath, {
+      matching: ['*.json', '!module.json']
+    });
+    jsonFiles.forEach(file => {
+      let tempfile = file.replace(patcherPath + "\\", '').replace('.json', '');
+      if (xelib.FileByName(`${tempfile}.esp`) > 0 || xelib.FileByName(`${tempfile}.esm`) > 0 || xelib.FileByName(`${tempfile}.esl`) > 0) {
+        loadJsonData(file, i);
+        i++;
+      }
+    });
+  }
 }
 
 let settingsController = function ($scope, referenceService, progressService, errorService) {
