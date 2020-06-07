@@ -57,5 +57,47 @@
     "bloodType": "_DS_Blood_Werebear",
     "venom": "",
     "voice": "CrWerewolfVoice"
+  }, {
+    "type": "monster",
+    "name": "SpiderAlbino",
+    "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
+    "carcassMessageBox": "",
+    "carcassSize": "3",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "deathItem": [
+      "_DS_Token_Mat", "1",
+      "_DS_Token_Meat", "1",
+      "_DS_Token_Meat_Fresh", "1",
+      "_DS_Token_Venom", "1"
+    ],
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "_DS_Food_Raw_Spider",
+    "mats": [
+      [
+        "SpiderEgg", "1",
+        "DLC2ExpSpiderAlbinoButtDamaged", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "1",
+        "DLC2ExpSpiderAlbinoButtDamaged", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "2",
+        "DLC2ExpSpiderAlbinoButt", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "_DS_AnimalBone_Small", "1"
+      ]
+    ],
+    "negativeTreasure": ["DLC2ExpSpiderAlbinoButt", "DLC2ExpSpiderAlbinoButtDamaged"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "FrostbiteVenom",
+    "voice": "CrFrostbiteSpiderVoice"
   }
 ]

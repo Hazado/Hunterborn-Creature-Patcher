@@ -1,0 +1,558 @@
+[{
+    "type": "monster",
+    "name": "Spider",
+    "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
+    "carcassMessageBox": "",
+    "carcassSize": "3",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "deathItem": [
+      "_DS_Token_Mat", "1",
+      "_DS_Token_Meat", "1",
+      "_DS_Token_Meat_Fresh", "1",
+      "_DS_Token_Venom", "1"
+    ],
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "_DS_Food_Raw_Spider",
+    "mats": [
+      [
+        "SpiderEgg", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "2",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "_DS_AnimalBone_Small", "1"
+      ]
+    ],
+    "negativeTreasure": ["_00SpiderVenom"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "_00SpiderVenom",
+    "voice": "CrFrostbiteSpiderVoice"
+  }, {
+    "type": "monster",
+    "name": "SpiderGiant",
+    "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
+    "carcassMessageBox": "",
+    "carcassSize": "5",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "deathItem": [
+      "_DS_Token_Mat", "1",
+      "_DS_Token_Meat", "1",
+      "_DS_Token_Meat_Fresh", "1",
+      "_DS_Token_Venom", "1"
+    ],
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "_DS_Food_Raw_Spider",
+    "mats": [
+      [
+        "SpiderEgg", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "2",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "_DS_AnimalBone_Small", "1"
+      ]
+    ],
+    "negativeTreasure": ["_00SpiderVenom"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "_00SpiderVenom",
+    "voice": "CrFrostbiteSpiderVoice"
+  }, {
+    "type": "monster",
+    "name": "ChaurusSwampWarrior",
+    "animalSwitch": "_DS_Hunterborn_IncludeMonsterChaurus",
+    "carcassMessageBox": "",
+    "carcassSize": "3",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "deathItem": [
+      "_DS_Token_Mat", "1",
+      "_DS_Token_Meat", "1",
+      "_DS_Token_Meat_Fresh", "1",
+      "_DS_Token_Venom", "1"
+    ],
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "_DS_Food_Raw_Chaurus",
+    "mats": [
+      [
+        "ChaurusChitin", "1"
+      ],
+      [
+        "_00ChaurusSwampEggs", "1",
+        "ChaurusChitin", "1",
+        "_00ChaurusSwampAntennae", "1"
+      ],
+      [
+        "_00ChaurusSwampEggs", "2",
+        "ChaurusChitin", "1",
+        "_00ChaurusSwampAntennae", "2"
+      ],
+      [
+        "_00ChaurusSwampEggs", "1",
+        "_DS_AnimalBone_Small", "1",
+        "_DS_AnimalBone_Large", "1"
+      ]
+    ],
+    "negativeTreasure": ["ChaurusChitin", "_00ChaurusSwampAntennae", "_00ChaurusSwampEggs"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "_DS_Venom_Chaurus",
+    "voice": "CrChaurusVoice"
+  }, {
+    "type": "monster",
+    "name": "ChaurusWarrior",
+    "animalSwitch": "_DS_Hunterborn_IncludeMonsterChaurus",
+    "carcassMessageBox": "",
+    "carcassSize": "3",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "deathItem": [
+      "_DS_Token_Mat", "1",
+      "_DS_Token_Meat", "1",
+      "_DS_Token_Meat_Fresh", "1",
+      "_DS_Token_Venom", "1"
+    ],
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "_DS_Food_Raw_Chaurus",
+    "mats": [
+      [
+        "ChaurusChitin", "1"
+      ],
+      [
+        "ChaurusEggs", "1",
+        "ChaurusChitin", "1",
+        "_00ChaurusWarriorAntennae", "1"
+      ],
+      [
+        "ChaurusEggs", "2",
+        "ChaurusChitin", "1",
+        "_00ChaurusWarriorAntennae", "2"
+      ],
+      [
+        "ChaurusEggs", "1",
+        "_DS_AnimalBone_Small", "1",
+        "_DS_AnimalBone_Large", "1"
+      ]
+    ],
+    "negativeTreasure": ["ChaurusChitin", "_00ChaurusWarriorAntennae", "ChaurusEggs"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "_DS_Venom_Chaurus",
+    "voice": "CrChaurusVoice"
+  }, {
+    "type": "animal",
+    "name": "Huskey",
+    "animalSwitch": "_DS_Hunterborn_IncludeDog",
+    "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
+    "carcassSize": "2",
+    "carcassWeight": "50",
+    "carcassValue": "10",
+    "deathItem": [
+      "_DS_Token_Carcass_Clean", "1",
+      "_DS_Token_Mat", "1",
+      "_DS_Token_Meat", "2",
+      "_DS_Token_Meat_Fresh", "1"
+    ],
+    "peltCount": ["4", "2", "2", "2"],
+    "furPlateCount": ["1", "2", "4", "8"],
+    "meat": "FoodDogMeat",
+    "mats": [
+      [
+        "_DS_CanineTooth", "1"
+      ],
+      [
+        "_DS_CanineTooth", "1",
+        "_DS_LI_Mats__AnimalFat", "1"
+      ],
+      [
+        "_DS_CanineTooth", "2",
+        "_DS_LI_Mats__AnimalFat", "1"
+      ],
+      [
+        "_DS_CanineTooth", "1",
+        "_DS_AnimalBone_Small", "1",
+        "_DS_AnimalBone_Small", "1"
+      ]
+    ],
+    "negativeTreasure": [],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrDogHusky"
+  }, {
+    "type": "monster",
+    "name": "TundraSpider",
+    "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
+    "carcassMessageBox": "",
+    "carcassSize": "3",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "deathItem": [
+      "_DS_Token_Mat", "1",
+      "_DS_Token_Meat", "1",
+      "_DS_Token_Meat_Fresh", "1",
+      "_DS_Token_Venom", "1"
+    ],
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "_DS_Food_Raw_Spider",
+    "mats": [
+      [
+        "SpiderEgg", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "2",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "_DS_AnimalBone_Small", "1"
+      ]
+    ],
+    "negativeTreasure": ["_00TundraVenom"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "_00TundraVenom",
+    "voice": "CrFrostbiteSpiderVoice"
+  }, {
+    "type": "monster",
+    "name": "TundraSpiderGiant",
+    "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
+    "carcassMessageBox": "",
+    "carcassSize": "5",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "deathItem": [
+      "_DS_Token_Mat", "1",
+      "_DS_Token_Meat", "1",
+      "_DS_Token_Meat_Fresh", "1",
+      "_DS_Token_Venom", "1"
+    ],
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "_DS_Food_Raw_Spider",
+    "mats": [
+      [
+        "SpiderEgg", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "2",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "_DS_AnimalBone_Small", "1"
+      ]
+    ],
+    "negativeTreasure": ["_00TundraVenom"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "_00TundraVenom",
+    "voice": "CrFrostbiteSpiderVoice"
+  }, {
+    "type": "monster",
+    "name": "SwampSpider",
+    "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
+    "carcassMessageBox": "",
+    "carcassSize": "3",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "deathItem": [
+      "_DS_Token_Mat", "1",
+      "_DS_Token_Meat", "1",
+      "_DS_Token_Meat_Fresh", "1",
+      "_DS_Token_Venom", "1"
+    ],
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "_DS_Food_Raw_Spider",
+    "mats": [
+      [
+        "SpiderEgg", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "2",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "_DS_AnimalBone_Small", "1"
+      ]
+    ],
+    "negativeTreasure": ["_00SwampVenom"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "_00SwampVenom",
+    "voice": "CrFrostbiteSpiderVoice"
+  }, {
+    "type": "monster",
+    "name": "SwampSpiderGiant",
+    "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
+    "carcassMessageBox": "",
+    "carcassSize": "5",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "deathItem": [
+      "_DS_Token_Mat", "1",
+      "_DS_Token_Meat", "1",
+      "_DS_Token_Meat_Fresh", "1",
+      "_DS_Token_Venom", "1"
+    ],
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "_DS_Food_Raw_Spider",
+    "mats": [
+      [
+        "SpiderEgg", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "2",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "_DS_AnimalBone_Small", "1"
+      ]
+    ],
+    "negativeTreasure": ["_00SwampVenom"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "_00SwampVenom",
+    "voice": "CrFrostbiteSpiderVoice"
+  }, {
+    "type": "monster",
+    "name": "IcebiteSpider",
+    "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
+    "carcassMessageBox": "",
+    "carcassSize": "3",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "deathItem": [
+      "_DS_Token_Mat", "1",
+      "_DS_Token_Meat", "1",
+      "_DS_Token_Meat_Fresh", "1",
+      "_DS_Token_Venom", "1"
+    ],
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "_DS_Food_Raw_Spider",
+    "mats": [
+      [
+        "SpiderEgg", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "2",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "_DS_AnimalBone_Small", "1"
+      ]
+    ],
+    "negativeTreasure": ["_00IcebiteVenom"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "_00IcebiteVenom",
+    "voice": "CrFrostbiteSpiderVoice"
+  }, {
+    "type": "monster",
+    "name": "IcebiteSpiderGiant",
+    "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
+    "carcassMessageBox": "",
+    "carcassSize": "3",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "deathItem": [
+      "_DS_Token_Mat", "1",
+      "_DS_Token_Meat", "1",
+      "_DS_Token_Meat_Fresh", "1",
+      "_DS_Token_Venom", "1"
+    ],
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "_DS_Food_Raw_Spider",
+    "mats": [
+      [
+        "SpiderEgg", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "2",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "_DS_AnimalBone_Small", "1"
+      ]
+    ],
+    "negativeTreasure": ["_00IcebiteVenom"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "_00IcebiteVenom",
+    "voice": "CrFrostbiteSpiderVoice"
+  }, {
+    "type": "monster",
+    "name": "Dreugh",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
+    "carcassSize": "3",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "deathItem": [
+      "_DS_Token_Mat", "1",
+      "_DS_Token_Meat", "1",
+      "_DS_Token_Meat_Fresh", "1"
+    ],
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "_DS_Food_Raw_Mudcrab",
+    "mats": [
+      [
+        "MudcrabChitin", "1",
+        "_00IngredientLootDreugh20", "2",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "MudcrabChitin", "1",
+        "_00IngredientLootDreugh20", "3",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "MudcrabChitin", "2",
+        "_00IngredientLootDreugh20", "4",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "MudcrabChitin", "1",
+        "_DS_AnimalBone_Large", "1"
+      ]
+    ],
+    "negativeTreasure": ["MudcrabChitin", "_00IngredientLootDreugh20"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrMudcrabVoice"
+  }, {
+    "type": "monster",
+    "name": "SnowbiteSpider",
+    "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
+    "carcassMessageBox": "",
+    "carcassSize": "3",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "deathItem": [
+      "_DS_Token_Mat", "1",
+      "_DS_Token_Meat", "1",
+      "_DS_Token_Meat_Fresh", "1",
+      "_DS_Token_Venom", "1"
+    ],
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "_DS_Food_Raw_Spider",
+    "mats": [
+      [
+        "SpiderEgg", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "2",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "_DS_AnimalBone_Small", "1"
+      ]
+    ],
+    "negativeTreasure": ["_00SnowbiteVenom"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "_00SnowbiteVenom",
+    "voice": "CrFrostbiteSpiderVoice"
+  }, {
+    "type": "monster",
+    "name": "SnowbiteSpiderGiant",
+    "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
+    "carcassMessageBox": "",
+    "carcassSize": "5",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "deathItem": [
+      "_DS_Token_Mat", "1",
+      "_DS_Token_Meat", "1",
+      "_DS_Token_Meat_Fresh", "1",
+      "_DS_Token_Venom", "1"
+    ],
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "_DS_Food_Raw_Spider",
+    "mats": [
+      [
+        "SpiderEgg", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "1",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "SpiderEgg", "2",
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "_DS_AnimalBone_Small", "1"
+      ]
+    ],
+    "negativeTreasure": ["_00SnowbiteVenom"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "_00SnowbiteVenom",
+    "voice": "CrFrostbiteSpiderVoice"
+  }
+]
