@@ -554,5 +554,52 @@
     "bloodType": "",
     "venom": "_00SnowbiteVenom",
     "voice": "CrFrostbiteSpiderVoice"
+  }, {
+    "type": "animal",
+    "name": "Rhino",
+    "animalSwitch": "",
+    "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
+    "carcassSize": "5",
+    "carcassWeight": "4500",
+    "carcassValue": "1000",
+    "deathItem": [
+      "_DS_Token_Pelt", "1",
+      "_DS_Token_Carcass_Clean", "1",
+      "_DS_Token_Mat", "1",
+      "_DS_Token_Meat", "2",
+      "_DS_Token_Meat_Fresh", "1"
+    ],
+    "peltCount": ["4", "2", "2", "2"],
+    "furPlateCount": ["1", "2", "4", "8"],
+    "meat": "FoodBeef",
+    "mats": [
+      [
+        "_DS_AnimalBone_Small", "1"
+      ],
+      [
+        "_00RhinoTusk", "1",
+        "_DS_AnimalBone_Small", "2",
+        "_DS_AnimalBone_Large", "1",
+        "_DS_LI_Mats__AnimalBladder", "1",
+        "_DS_LI_Mats__AnimalFat", "5"
+      ],
+      [
+        "_00RhinoTusk", "1",
+        "_DS_AnimalBone_Small", "3",
+        "_DS_AnimalBone_Large", "2",
+        "_DS_LI_Mats__AnimalBladder", "1",
+        "_DS_LI_Mats__AnimalFat", "5"
+      ],
+      [
+        "_DS_AnimalBone_Large", "1",
+        "_DS_AnimalBone_Large", "2",
+        "_DS_AnimalBone_Superb", "1"
+      ]
+    ],
+    "negativeTreasure": [],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrMammothVoice"
   }
 ]
