@@ -164,7 +164,13 @@ let buildDeathItem = function (deathItems, rec) {
   if (!deathItems.hasOwnProperty(deathItem)) {
     for (let i = 0; i < deathItemNameMatch.length; i++) {
       let re = new RegExp(deathItemNameMatch[i], 'i');
-      if (deathItem.match(/Elk/i) != null) {
+      if (deathItem.match(re) != null) {
+        deathItems[deathItem] = {
+          animalType: deathItemNameMatch[i],
+          npcs: []
+        };
+        break;
+      } else if (deathItem.match(/Elk/i) != null) {
         deathItems[deathItem] = {
           animalType: 'Elk, Male',
           npcs: []
@@ -173,12 +179,6 @@ let buildDeathItem = function (deathItems, rec) {
       } else if (deathItem.match(/MudCrab/i) != null) {
         deathItems[deathItem] = {
           animalType: 'MudCrab, Large',
-          npcs: []
-        };
-        break;
-      } else if (deathItem.match(re) != null) {
-        deathItems[deathItem] = {
-          animalType: deathItemNameMatch[i],
           npcs: []
         };
         break;
@@ -601,12 +601,12 @@ let BloodTypes = function (aiIndex, animalType, jsonRecord, patch) {
 };
 
 let DefaultPeltValues = function (animalType, npc, patch, Pelts) {
-    if (!monsterTypes.includes(animalType)) {
-      DefaultPeltValuesArray = xelib.GetScript(qustRecords["_DS_Hunterborn"], "_DS_HB_Animals");
-    } else {
-      DefaultPeltValuesArray = xelib.GetScript(qustRecords["_DS_Hunterborn"], "_DS_HB_Monsters");
-    }
-    DefaultPeltValuesArrayProperty = xelib.GetScriptProperty(DefaultPeltValuesArray, "DefaultPeltValues");
+  if (!monsterTypes.includes(animalType)) {
+    DefaultPeltValuesArray = xelib.GetScript(qustRecords["_DS_Hunterborn"], "_DS_HB_Animals");
+  } else {
+    DefaultPeltValuesArray = xelib.GetScript(qustRecords["_DS_Hunterborn"], "_DS_HB_Monsters");
+  }
+  DefaultPeltValuesArrayProperty = xelib.GetScriptProperty(DefaultPeltValuesArray, "DefaultPeltValues");
   if (GetDefaultPelt(npc) != undefined) {
     let peltTemp = xelib.GetWinningOverride(GetDefaultPelt(npc));
     xelib.AddArrayItem(DefaultPeltValuesArrayProperty, "Value\\Array of Int32", "", xelib.GetValue(miscRecords[xelib.EditorID(peltTemp)], "DATA\\Value"));
