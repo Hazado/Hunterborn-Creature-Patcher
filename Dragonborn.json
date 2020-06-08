@@ -6,51 +6,37 @@
     "carcassSize": "5",
     "carcassWeight": "",
     "carcassValue": "",
-    "deathItem": [
-      "_DS_Token_Pelt", "1",
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "1",
-      "_DS_Token_Meat_Fresh", "1",
-      "_DS_Token_Blood", "1"
-    ],
     "peltCount": ["4", "2", "2", "2"],
     "furPlateCount": ["2", "4", "8", "16"],
     "meat": "_DS_Food_Raw_Bear",
-    "mats": [
-      [
-        "BearClaws", "1",
-        "_DS_BearTooth", "1"
-      ],
-      [
-        "HumanFlesh", "1",
-        "BearClaws", "1",
-        "_DS_BearTooth", "1",
-        "_DS_BearEyeball", "1",
-        "_DS_LI_Mats__AnimalFat", "10"
-      ],
-      [
-        "HumanFlesh", "1",
-        "BearClaws", "2",
-        "_DS_BearTooth", "2",
-        "_DS_BearEyeball", "2",
-        "_DS_BearHeart", "1",
-        "_DS_LI_Mats__AnimalFat", "10"
-      ],
-      [
-        "HumanFlesh", "1",
-        "BearClaws", "1",
-        "_DS_BearTooth", "1",
-        "_DS_AnimalBone_Large", "1",
-        "_DS_AnimalBone_Large", "2",
-        "_DS_AnimalBone_Superb", "1"
-      ],
-      [
-        "_DS_LargeBearClaws", "1",
-        "_DS_FlawlessBearTooth", "1"
-      ],
-      [
-        "_DS_RiteClaw_Bear", "1"
-      ]
+    "mats": [{
+        "BearClaws": 1,
+        "_DS_BearTooth": 1
+      }, {
+        "HumanFlesh": 1,
+        "BearClaws": 1,
+        "_DS_BearTooth": 1,
+        "_DS_BearEyeball": 1,
+        "_DS_LI_Mats__AnimalFat": 10
+      }, {
+        "HumanFlesh": 1,
+        "BearClaws": 2,
+        "_DS_BearTooth": 2,
+        "_DS_BearEyeball": 2,
+        "_DS_BearHeart": 1,
+        "_DS_LI_Mats__AnimalFat": 10
+      }, {
+        "HumanFlesh": 1,
+        "BearClaws": 1,
+        "_DS_BearTooth": 1,
+        "_DS_AnimalBone_Large": 3,
+        "_DS_AnimalBone_Superb": 1
+      }, {
+        "_DS_LargeBearClaws": 1,
+        "_DS_FlawlessBearTooth": 1
+      }, {
+        "_DS_RiteClaw_Bear": 1
+      }
     ],
     "negativeTreasure": ["BearClaws", "BearPelt", "HumanFlesh"],
     "sharedDeathItems": "",
@@ -65,34 +51,24 @@
     "carcassSize": "3",
     "carcassWeight": "",
     "carcassValue": "",
-    "deathItem": [
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "1",
-      "_DS_Token_Meat_Fresh", "1",
-      "_DS_Token_Venom", "1"
-    ],
     "peltCount": ["2", "1", "2", "2"],
     "furPlateCount": ["1", "1", "2", "3"],
     "meat": "_DS_Food_Raw_Spider",
-    "mats": [
-      [
-        "SpiderEgg", "1",
-        "DLC2ExpSpiderAlbinoButtDamaged", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "1",
-        "DLC2ExpSpiderAlbinoButtDamaged", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "2",
-        "DLC2ExpSpiderAlbinoButt", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "_DS_AnimalBone_Small", "1"
-      ]
+    "mats": [{
+        "SpiderEgg": 1,
+        "DLC2ExpSpiderAlbinoButtDamaged": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 1,
+        "DLC2ExpSpiderAlbinoButtDamaged": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 2,
+        "DLC2ExpSpiderAlbinoButt": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 1
+      }
     ],
     "negativeTreasure": ["DLC2ExpSpiderAlbinoButt", "DLC2ExpSpiderAlbinoButtDamaged"],
     "sharedDeathItems": "",

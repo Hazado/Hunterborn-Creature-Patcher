@@ -6,31 +6,21 @@
     "carcassSize": "3",
     "carcassWeight": "",
     "carcassValue": "",
-    "deathItem": [
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "1",
-      "_DS_Token_Meat_Fresh", "1",
-      "_DS_Token_Venom", "1"
-    ],
     "peltCount": ["2", "1", "2", "2"],
     "furPlateCount": ["1", "1", "2", "3"],
     "meat": "_DS_Food_Raw_Spider",
-    "mats": [
-      [
-        "SpiderEgg", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "2",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "_DS_AnimalBone_Small", "1"
-      ]
+    "mats": [{
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 2,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 1
+      }
     ],
     "negativeTreasure": ["_00SpiderVenom"],
     "sharedDeathItems": "",
@@ -45,31 +35,21 @@
     "carcassSize": "5",
     "carcassWeight": "",
     "carcassValue": "",
-    "deathItem": [
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "1",
-      "_DS_Token_Meat_Fresh", "1",
-      "_DS_Token_Venom", "1"
-    ],
     "peltCount": ["2", "1", "2", "2"],
     "furPlateCount": ["1", "1", "2", "3"],
     "meat": "_DS_Food_Raw_Spider",
-    "mats": [
-      [
-        "SpiderEgg", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "2",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "_DS_AnimalBone_Small", "1"
-      ]
+    "mats": [{
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 2,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 1
+      }
     ],
     "negativeTreasure": ["_00SpiderVenom"],
     "sharedDeathItems": "",
@@ -84,34 +64,24 @@
     "carcassSize": "3",
     "carcassWeight": "",
     "carcassValue": "",
-    "deathItem": [
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "1",
-      "_DS_Token_Meat_Fresh", "1",
-      "_DS_Token_Venom", "1"
-    ],
     "peltCount": ["2", "1", "2", "2"],
     "furPlateCount": ["1", "1", "2", "3"],
     "meat": "_DS_Food_Raw_Chaurus",
-    "mats": [
-      [
-        "ChaurusChitin", "1"
-      ],
-      [
-        "_00ChaurusSwampEggs", "1",
-        "ChaurusChitin", "1",
-        "_00ChaurusSwampAntennae", "1"
-      ],
-      [
-        "_00ChaurusSwampEggs", "2",
-        "ChaurusChitin", "1",
-        "_00ChaurusSwampAntennae", "2"
-      ],
-      [
-        "_00ChaurusSwampEggs", "1",
-        "_DS_AnimalBone_Small", "1",
-        "_DS_AnimalBone_Large", "1"
-      ]
+    "mats": [{
+        "ChaurusChitin": 1
+      }, {
+        "_00ChaurusSwampEggs": 1,
+        "ChaurusChitin": 1,
+        "_00ChaurusSwampAntennae": 1
+      }, {
+        "_00ChaurusSwampEggs": 2,
+        "ChaurusChitin": 1,
+        "_00ChaurusSwampAntennae": 2
+      }, {
+        "_00ChaurusSwampEggs": 1,
+        "_DS_AnimalBone_Small": 1,
+        "_DS_AnimalBone_Large": 1
+      }
     ],
     "negativeTreasure": ["ChaurusChitin", "_00ChaurusSwampAntennae", "_00ChaurusSwampEggs"],
     "sharedDeathItems": "",
@@ -126,34 +96,24 @@
     "carcassSize": "3",
     "carcassWeight": "",
     "carcassValue": "",
-    "deathItem": [
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "1",
-      "_DS_Token_Meat_Fresh", "1",
-      "_DS_Token_Venom", "1"
-    ],
     "peltCount": ["2", "1", "2", "2"],
     "furPlateCount": ["1", "1", "2", "3"],
     "meat": "_DS_Food_Raw_Chaurus",
-    "mats": [
-      [
-        "ChaurusChitin", "1"
-      ],
-      [
-        "ChaurusEggs", "1",
-        "ChaurusChitin", "1",
-        "_00ChaurusWarriorAntennae", "1"
-      ],
-      [
-        "ChaurusEggs", "2",
-        "ChaurusChitin", "1",
-        "_00ChaurusWarriorAntennae", "2"
-      ],
-      [
-        "ChaurusEggs", "1",
-        "_DS_AnimalBone_Small", "1",
-        "_DS_AnimalBone_Large", "1"
-      ]
+    "mats": [{
+        "ChaurusChitin": 1
+      }, {
+        "ChaurusEggs": 1,
+        "ChaurusChitin": 1,
+        "_00ChaurusWarriorAntennae": 1
+      }, {
+        "ChaurusEggs": 2,
+        "ChaurusChitin": 1,
+        "_00ChaurusWarriorAntennae": 2
+      }, {
+        "ChaurusEggs": 1,
+        "_DS_AnimalBone_Small": 1,
+        "_DS_AnimalBone_Large": 1
+      }
     ],
     "negativeTreasure": ["ChaurusChitin", "_00ChaurusWarriorAntennae", "ChaurusEggs"],
     "sharedDeathItems": "",
@@ -168,32 +128,21 @@
     "carcassSize": "2",
     "carcassWeight": "50",
     "carcassValue": "10",
-    "deathItem": [
-      "_DS_Token_Carcass_Clean", "1",
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "2",
-      "_DS_Token_Meat_Fresh", "1"
-    ],
     "peltCount": ["4", "2", "2", "2"],
     "furPlateCount": ["1", "2", "4", "8"],
     "meat": "FoodDogMeat",
-    "mats": [
-      [
-        "_DS_CanineTooth", "1"
-      ],
-      [
-        "_DS_CanineTooth", "1",
-        "_DS_LI_Mats__AnimalFat", "1"
-      ],
-      [
-        "_DS_CanineTooth", "2",
-        "_DS_LI_Mats__AnimalFat", "1"
-      ],
-      [
-        "_DS_CanineTooth", "1",
-        "_DS_AnimalBone_Small", "1",
-        "_DS_AnimalBone_Small", "1"
-      ]
+    "mats": [{
+        "_DS_CanineTooth": 1
+      }, {
+        "_DS_CanineTooth": 1,
+        "_DS_LI_Mats__AnimalFat": 1
+      }, {
+        "_DS_CanineTooth": 2,
+        "_DS_LI_Mats__AnimalFat": 1
+      }, {
+        "_DS_CanineTooth": 1,
+        "_DS_AnimalBone_Small": 2
+      }
     ],
     "negativeTreasure": [],
     "sharedDeathItems": "",
@@ -208,31 +157,21 @@
     "carcassSize": "3",
     "carcassWeight": "",
     "carcassValue": "",
-    "deathItem": [
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "1",
-      "_DS_Token_Meat_Fresh", "1",
-      "_DS_Token_Venom", "1"
-    ],
     "peltCount": ["2", "1", "2", "2"],
     "furPlateCount": ["1", "1", "2", "3"],
     "meat": "_DS_Food_Raw_Spider",
-    "mats": [
-      [
-        "SpiderEgg", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "2",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "_DS_AnimalBone_Small", "1"
-      ]
+    "mats": [{
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 2,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 1
+      }
     ],
     "negativeTreasure": ["_00TundraVenom"],
     "sharedDeathItems": "",
@@ -247,31 +186,21 @@
     "carcassSize": "5",
     "carcassWeight": "",
     "carcassValue": "",
-    "deathItem": [
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "1",
-      "_DS_Token_Meat_Fresh", "1",
-      "_DS_Token_Venom", "1"
-    ],
     "peltCount": ["2", "1", "2", "2"],
     "furPlateCount": ["1", "1", "2", "3"],
     "meat": "_DS_Food_Raw_Spider",
-    "mats": [
-      [
-        "SpiderEgg", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "2",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "_DS_AnimalBone_Small", "1"
-      ]
+    "mats": [{
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 2,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 1
+      }
     ],
     "negativeTreasure": ["_00TundraVenom"],
     "sharedDeathItems": "",
@@ -286,31 +215,21 @@
     "carcassSize": "3",
     "carcassWeight": "",
     "carcassValue": "",
-    "deathItem": [
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "1",
-      "_DS_Token_Meat_Fresh", "1",
-      "_DS_Token_Venom", "1"
-    ],
     "peltCount": ["2", "1", "2", "2"],
     "furPlateCount": ["1", "1", "2", "3"],
     "meat": "_DS_Food_Raw_Spider",
-    "mats": [
-      [
-        "SpiderEgg", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "2",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "_DS_AnimalBone_Small", "1"
-      ]
+    "mats": [{
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 2,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 1
+      }
     ],
     "negativeTreasure": ["_00SwampVenom"],
     "sharedDeathItems": "",
@@ -325,31 +244,21 @@
     "carcassSize": "5",
     "carcassWeight": "",
     "carcassValue": "",
-    "deathItem": [
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "1",
-      "_DS_Token_Meat_Fresh", "1",
-      "_DS_Token_Venom", "1"
-    ],
     "peltCount": ["2", "1", "2", "2"],
     "furPlateCount": ["1", "1", "2", "3"],
     "meat": "_DS_Food_Raw_Spider",
-    "mats": [
-      [
-        "SpiderEgg", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "2",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "_DS_AnimalBone_Small", "1"
-      ]
+    "mats": [{
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 2,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 1
+      }
     ],
     "negativeTreasure": ["_00SwampVenom"],
     "sharedDeathItems": "",
@@ -364,31 +273,21 @@
     "carcassSize": "3",
     "carcassWeight": "",
     "carcassValue": "",
-    "deathItem": [
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "1",
-      "_DS_Token_Meat_Fresh", "1",
-      "_DS_Token_Venom", "1"
-    ],
     "peltCount": ["2", "1", "2", "2"],
     "furPlateCount": ["1", "1", "2", "3"],
     "meat": "_DS_Food_Raw_Spider",
-    "mats": [
-      [
-        "SpiderEgg", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "2",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "_DS_AnimalBone_Small", "1"
-      ]
+    "mats": [{
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 2,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 1
+      }
     ],
     "negativeTreasure": ["_00IcebiteVenom"],
     "sharedDeathItems": "",
@@ -403,31 +302,21 @@
     "carcassSize": "3",
     "carcassWeight": "",
     "carcassValue": "",
-    "deathItem": [
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "1",
-      "_DS_Token_Meat_Fresh", "1",
-      "_DS_Token_Venom", "1"
-    ],
     "peltCount": ["2", "1", "2", "2"],
     "furPlateCount": ["1", "1", "2", "3"],
     "meat": "_DS_Food_Raw_Spider",
-    "mats": [
-      [
-        "SpiderEgg", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "2",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "_DS_AnimalBone_Small", "1"
-      ]
+    "mats": [{
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 2,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 1
+      }
     ],
     "negativeTreasure": ["_00IcebiteVenom"],
     "sharedDeathItems": "",
@@ -442,34 +331,25 @@
     "carcassSize": "3",
     "carcassWeight": "",
     "carcassValue": "",
-    "deathItem": [
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "1",
-      "_DS_Token_Meat_Fresh", "1"
-    ],
     "peltCount": ["2", "1", "2", "2"],
     "furPlateCount": ["1", "1", "2", "3"],
     "meat": "_DS_Food_Raw_Mudcrab",
-    "mats": [
-      [
-        "MudcrabChitin", "1",
-        "_00IngredientLootDreugh20", "2",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "MudcrabChitin", "1",
-        "_00IngredientLootDreugh20", "3",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "MudcrabChitin", "2",
-        "_00IngredientLootDreugh20", "4",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "MudcrabChitin", "1",
-        "_DS_AnimalBone_Large", "1"
-      ]
+    "mats": [{
+        "MudcrabChitin": 1,
+        "_00IngredientLootDreugh20": 2,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "MudcrabChitin": 1,
+        "_00IngredientLootDreugh20": 3,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "MudcrabChitin": 2,
+        "_00IngredientLootDreugh20": 4,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "MudcrabChitin": 1,
+        "_DS_AnimalBone_Large": 1
+      }
     ],
     "negativeTreasure": ["MudcrabChitin", "_00IngredientLootDreugh20"],
     "sharedDeathItems": "",
@@ -484,31 +364,21 @@
     "carcassSize": "3",
     "carcassWeight": "",
     "carcassValue": "",
-    "deathItem": [
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "1",
-      "_DS_Token_Meat_Fresh", "1",
-      "_DS_Token_Venom", "1"
-    ],
     "peltCount": ["2", "1", "2", "2"],
     "furPlateCount": ["1", "1", "2", "3"],
     "meat": "_DS_Food_Raw_Spider",
-    "mats": [
-      [
-        "SpiderEgg", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "2",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "_DS_AnimalBone_Small", "1"
-      ]
+    "mats": [{
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 2,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 1
+      }
     ],
     "negativeTreasure": ["_00SnowbiteVenom"],
     "sharedDeathItems": "",
@@ -523,31 +393,21 @@
     "carcassSize": "5",
     "carcassWeight": "",
     "carcassValue": "",
-    "deathItem": [
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "1",
-      "_DS_Token_Meat_Fresh", "1",
-      "_DS_Token_Venom", "1"
-    ],
     "peltCount": ["2", "1", "2", "2"],
     "furPlateCount": ["1", "1", "2", "3"],
     "meat": "_DS_Food_Raw_Spider",
-    "mats": [
-      [
-        "SpiderEgg", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "1",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "SpiderEgg", "2",
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "_DS_AnimalBone_Small", "1"
-      ]
+    "mats": [{
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 2,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 1
+      }
     ],
     "negativeTreasure": ["_00SnowbiteVenom"],
     "sharedDeathItems": "",
@@ -562,44 +422,122 @@
     "carcassSize": "5",
     "carcassWeight": "4500",
     "carcassValue": "1000",
-    "deathItem": [
-      "_DS_Token_Pelt", "1",
-      "_DS_Token_Carcass_Clean", "1",
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "2",
-      "_DS_Token_Meat_Fresh", "1"
-    ],
     "peltCount": ["4", "2", "2", "2"],
     "furPlateCount": ["1", "2", "4", "8"],
     "meat": "FoodBeef",
-    "mats": [
-      [
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "_00RhinoTusk", "1",
-        "_DS_AnimalBone_Small", "2",
-        "_DS_AnimalBone_Large", "1",
-        "_DS_LI_Mats__AnimalBladder", "1",
-        "_DS_LI_Mats__AnimalFat", "5"
-      ],
-      [
-        "_00RhinoTusk", "1",
-        "_DS_AnimalBone_Small", "3",
-        "_DS_AnimalBone_Large", "2",
-        "_DS_LI_Mats__AnimalBladder", "1",
-        "_DS_LI_Mats__AnimalFat", "5"
-      ],
-      [
-        "_DS_AnimalBone_Large", "1",
-        "_DS_AnimalBone_Large", "2",
-        "_DS_AnimalBone_Superb", "1"
-      ]
+    "mats": [{
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_00RhinoTusk": 1,
+        "_DS_AnimalBone_Small": 2,
+        "_DS_AnimalBone_Large": 1,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 5
+      }, {
+        "_00RhinoTusk": 1,
+        "_DS_AnimalBone_Small": 3,
+        "_DS_AnimalBone_Large": 2,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 5
+      }, {
+        "_DS_AnimalBone_Large": 3,
+        "_DS_AnimalBone_Superb": 1
+      }
     ],
     "negativeTreasure": [],
     "sharedDeathItems": "",
     "bloodType": "",
     "venom": "",
     "voice": "CrMammothVoice"
+  }, {
+    "type": "monster",
+    "name": "DramanFelalnir",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
+    "carcassSize": "5",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "",
+    "mats": [{
+        "DLC2ChitinPlate": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "DLC2ChitinPlate": 2,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "DaedraHeart": 1,
+        "DLC2ChitinPlate": 3,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Large": 1
+      }
+    ],
+    "negativeTreasure": ["DaedraHeart"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrDragonVoice"
+  }, {
+    "type": "monster",
+    "name": "DramanBrute",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
+    "carcassSize": "5",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "",
+    "mats": [{
+        "DLC2ChitinPlate": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "DLC2ChitinPlate": 2,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "DaedraHeart": 1,
+        "DLC2ChitinPlate": 3,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Large": 1
+      }
+    ],
+    "negativeTreasure": [],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrGargoyleVoice"
+  }, {
+    "type": "monster",
+    "name": "DramanNorokdir",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
+    "carcassSize": "5",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "",
+    "mats": [{
+        "DLC2ChitinPlate": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "DLC2ChitinPlate": 2,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "DaedraHeart": 1,
+        "DLC2ChitinPlate": 3,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Large": 1
+      }
+    ],
+    "negativeTreasure": ["DragonScales", "DragonBone"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrDragonVoice"
   }
 ]

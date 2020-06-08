@@ -1,125 +1,96 @@
 [{
-	"type": "animal",
-	"name": "Pig",
-	"animalSwitch": "",
-	"carcassMessageBox": "_DS_MsgBox_FreshCarcass",
-	"carcassSize": "1",
-	"carcassWeight": "250",
-	"carcassValue": "50",
-	"deathItem": [
-		"_DS_Token_Carcass_Clean", "1",
-		"_DS_Token_Mat", "1",
-		"_DS_Token_Meat", "2",
-		"_DS_Token_Meat_Fresh", "1"
-	],
-	"peltCount": ["2", "1", "2", "2"],
-	"furPlateCount": ["1", "1", "2", "3"],
-	"meat": "FoodPig",
-	"mats": [
-		[
-			"_DS_AnimalBone_Small", "1"
-		],
-		[
-			"_DS_AnimalBone_Small", "2",
-			"FoodPorkLeg", "1",
-			"LootSkyTESTPorkLeg50", "1",
-			"_DS_LI_Mats__AnimalBladder", "1",
-			"_DS_LI_Mats__AnimalFat", "2"
-		],
-		[
-			"_DS_AnimalBone_Small", "3",
-			"FoodPorkLeg", "1",
-			"LootSkyTESTPorkLeg50", "1",
-			"_DS_LI_Mats__AnimalBladder", "1",
-			"_DS_LI_Mats__AnimalFat", "2"
-		],
-		[
-			"_DS_AnimalBone_Small", "5"
-		]
-	],
-	"negativeTreasure": [],
-	"sharedDeathItems": "",
-	"bloodType": "",
-	"venom": "",
-	"voice": "CrPiggyVoice"
-}, {
-	"type": "animal",
-	"name": "Goose",
-	"animalSwitch": "",
-	"carcassMessageBox": "_DS_MsgBox_FreshCarcass_Pluck",
-	"carcassSize": "1",
-	"carcassWeight": "14",
-	"carcassValue": "5",
-	"deathItem": [
-		"_DS_Token_Carcass_Clean", "1",
-		"_DS_Token_Mat", "1",
-		"_DS_Token_Meat", "1",
-		"_DS_Token_Meat_Fresh", "1"
-	],
-	"peltCount": ["2", "1", "2", "2"],
-	"furPlateCount": ["1", "1", "2", "3"],
-	"meat": "FoodGoose",
-	"mats": [
-		[
-			"_DS_AnimalBone_Small", "1"
-		],
-		[
-			"_DS_AnimalBone_Small", "2",
-			"_DS_LI_Mats__AnimalBladder", "1",
-			"_DS_LI_Mats__AnimalFat", "2"
-		],
-		[
-			"_DS_AnimalBone_Small", "3",
-			"_DS_LI_Mats__AnimalBladder", "1",
-			"_DS_LI_Mats__AnimalFat", "2"
-		],
-		[
-			"_DS_AnimalBone_Small", "5"
-		]
-	],
-	"negativeTreasure": [],
-	"sharedDeathItems": "",
-	"bloodType": "",
-	"venom": "",
-	"voice": "CrGooseVoice"
-}, {
-	"type": "animal",
-	"name": "Sheep",
-	"animalSwitch": "",
-	"carcassMessageBox": "_DS_MsgBox_FreshCarcass",
-	"carcassSize": "1",
-	"carcassWeight": "300",
-	"carcassValue": "50",
-	"deathItem": [
-		"_DS_Token_Carcass_Clean", "1",
-		"_DS_Token_Mat", "1",
-		"_DS_Token_Meat", "1",
-		"_DS_Token_Meat_Fresh", "1"
-	],
-	"peltCount": ["2", "1", "2", "2"],
-	"furPlateCount": ["1", "1", "2", "3"],
-	"meat": "FoodSheepMeat",
-	"mats": [
-		[
-			"_DS_AnimalBone_Small", "1"
-		],
-		[
-			"_DS_AnimalBone_Small", "2",
-			"_DS_LI_Mats__AnimalBladder", "1",
-			"_DS_LI_Mats__AnimalFat", "2"
-		],
-		[
-			"_DS_AnimalBone_Small", "3",
-			"_DS_LI_Mats__AnimalBladder", "1",
-			"_DS_LI_Mats__AnimalFat", "2"
-		],
-		[
-			"_DS_AnimalBone_Small", "5"
-		]
-	],
-	"negativeTreasure": [],
-	"sharedDeathItems": "",
-	"bloodType": "",
-	"venom": "",
-	"voice": "CrGoatVoice"
-}]
+    "type": "animal",
+    "name": "Pig",
+    "animalSwitch": "",
+    "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
+    "carcassSize": "1",
+    "carcassWeight": "250",
+    "carcassValue": "50",
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "FoodPig",
+    "mats": [{
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 2,
+        "FoodPorkLeg": 1,
+        "LootSkyTESTPorkLeg50": 1,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 2
+      }, {
+        "_DS_AnimalBone_Small": 3,
+        "FoodPorkLeg": 1,
+        "LootSkyTESTPorkLeg50": 1,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 2
+      }, {
+        "_DS_AnimalBone_Small": 5
+      }
+    ],
+    "negativeTreasure": [],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrPiggyVoice"
+  }, {
+    "type": "animal",
+    "name": "Goose",
+    "animalSwitch": "",
+    "carcassMessageBox": "_DS_MsgBox_FreshCarcass_Pluck",
+    "carcassSize": "1",
+    "carcassWeight": "14",
+    "carcassValue": "5",
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "FoodGoose",
+    "mats": [{
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 2,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 2
+      }, {
+        "_DS_AnimalBone_Small": 3,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 2
+      }, {
+        "_DS_AnimalBone_Small": 5
+      }
+    ],
+    "negativeTreasure": [],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrGooseVoice"
+  }, {
+    "type": "animal",
+    "name": "Sheep",
+    "animalSwitch": "",
+    "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
+    "carcassSize": "1",
+    "carcassWeight": "300",
+    "carcassValue": "50",
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "FoodSheepMeat",
+    "mats": [{
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 2,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 2
+      }, {
+        "_DS_AnimalBone_Small": 3,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 2
+      }, {
+        "_DS_AnimalBone_Small": 5
+      }
+    ],
+    "negativeTreasure": [],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrGoatVoice"
+  }
+]

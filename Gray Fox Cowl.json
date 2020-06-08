@@ -6,40 +6,28 @@
     "carcassSize": "2",
     "carcassWeight": "160",
     "carcassValue": "50",
-    "deathItem": [
-      "_DS_Token_Pelt", "1",
-      "_DS_Token_Carcass_Clean", "1",
-      "_DS_Token_Mat", "1"
-    ],
     "peltCount": ["2", "1", "2", "2"],
     "furPlateCount": ["1", "2", "4", "8"],
     "meat": "",
-    "mats": [
-      [
-        "manny_GF_AncestralCheetahTooth", "1"
-      ],
-      [
-        "manny_GF_AncestralCheetahTooth", "1",
-        "manny_GF_AncestralCheetahEyeball", "1",
-        "_DS_LI_Mats__AnimalFat", "5"
-      ],
-      [
-        "manny_GF_AncestralCheetahTooth", "2",
-        "manny_GF_AncestralCheetahEyeball", "2",
-        "_DS_LI_Mats__AnimalFat", "5"
-      ],
-      [
-        "manny_GF_AncestralCheetahTooth", "1",
-        "_DS_AnimalBone_Large", "1",
-        "_DS_AnimalBone_Large", "2",
-        "_DS_AnimalBone_Superb", "1"
-      ],
-      [
-        "manny_GF_AncestralCheetahTooth", "1"
-      ],
-      [
-        "_DS_RiteClaw_Cat", "1"
-      ]
+    "mats": [{
+        "manny_GF_AncestralCheetahTooth": 1
+      }, {
+        "manny_GF_AncestralCheetahTooth": 1,
+        "manny_GF_AncestralCheetahEyeball": 1,
+        "_DS_LI_Mats__AnimalFat": 5
+      }, {
+        "manny_GF_AncestralCheetahTooth": 2,
+        "manny_GF_AncestralCheetahEyeball": 2,
+        "_DS_LI_Mats__AnimalFat": 5
+      }, {
+        "manny_GF_AncestralCheetahTooth": 1,
+        "_DS_AnimalBone_Large": 3,
+        "_DS_AnimalBone_Superb": 1
+      }, {
+        "manny_GF_AncestralCheetahTooth": 1
+      }, {
+        "_DS_RiteClaw_Cat": 1
+      }
     ],
     "negativeTreasure": ["manny_GF_AncestralCheetahPelt", "manny_GF_AncestralCheetahTooth", "manny_GF_AncestralCheetahEyeball"],
     "sharedDeathItems": "",
@@ -54,33 +42,22 @@
     "carcassSize": "3",
     "carcassWeight": "",
     "carcassValue": "",
-    "deathItem": [
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "1",
-      "_DS_Token_Meat_Fresh", "1",
-      "_DS_Token_Venom", "1",
-      "_DS_Token_Blood", "1"
-    ],
     "peltCount": ["2", "1", "2", "2"],
     "furPlateCount": ["1", "1", "2", "3"],
     "meat": "_DS_Food_Raw_Chaurus",
-    "mats": [
-      [
-        "ChaurusChitin", "1"
-      ],
-      [
-        "ChaurusEggs", "1",
-        "ChaurusChitin", "1"
-      ],
-      [
-        "ChaurusEggs", "2",
-        "ChaurusChitin", "1"
-      ],
-      [
-        "ChaurusEggs", "1",
-        "_DS_AnimalBone_Small", "1",
-        "_DS_AnimalBone_Large", "1"
-      ]
+    "mats": [{
+        "ChaurusChitin": 1
+      }, {
+        "ChaurusEggs": 1,
+        "ChaurusChitin": 1
+      }, {
+        "ChaurusEggs": 2,
+        "ChaurusChitin": 1
+      }, {
+        "ChaurusEggs": 1,
+        "_DS_AnimalBone_Small": 1,
+        "_DS_AnimalBone_Large": 1
+      }
     ],
     "negativeTreasure": ["manny_GF_Potion_DuneripperBlood", "ChaurusChitin", "ChaurusEggs"],
     "sharedDeathItems": "",

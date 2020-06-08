@@ -6,32 +6,22 @@
     "carcassSize": "1",
     "carcassWeight": "50",
     "carcassValue": "50",
-    "deathItem": [
-      "_DS_Token_Carcass_Clean", "1",
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "1",
-      "_DS_Token_Meat_Fresh", "1"
-    ],
     "peltCount": ["2", "1", "2", "2"],
     "furPlateCount": ["1", "1", "2", "3"],
     "meat": "CACO_FoodMeatPork",
-    "mats": [
-      [
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "_DS_AnimalBone_Small", "2",
-        "_DS_LI_Mats__AnimalBladder", "1",
-        "_DS_LI_Mats__AnimalFat", "2"
-      ],
-      [
-        "_DS_AnimalBone_Small", "3",
-        "_DS_LI_Mats__AnimalBladder", "1",
-        "_DS_LI_Mats__AnimalFat", "2"
-      ],
-      [
-        "_DS_AnimalBone_Small", "5"
-      ]
+    "mats": [{
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 2,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 2
+      }, {
+        "_DS_AnimalBone_Small": 3,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 2
+      }, {
+        "_DS_AnimalBone_Small": 5
+      }
     ],
     "negativeTreasure": [],
     "sharedDeathItems": "",
@@ -46,32 +36,22 @@
     "carcassSize": "2",
     "carcassWeight": "250",
     "carcassValue": "80",
-    "deathItem": [
-      "_DS_Token_Carcass_Clean", "1",
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "2",
-      "_DS_Token_Meat_Fresh", "1"
-    ],
     "peltCount": ["4", "2", "2", "2"],
     "furPlateCount": ["1", "2", "4", "8"],
     "meat": "CACO_FoodMeatPork",
-    "mats": [
-      [
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "_DS_AnimalBone_Small", "2",
-        "_DS_LI_Mats__AnimalBladder", "1",
-        "_DS_LI_Mats__AnimalFat", "5"
-      ],
-      [
-        "_DS_AnimalBone_Small", "3",
-        "_DS_LI_Mats__AnimalBladder", "1",
-        "_DS_LI_Mats__AnimalFat", "5"
-      ],
-      [
-        "_DS_AnimalBone_Large", "1"
-      ]
+    "mats": [{
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 2,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 5
+      }, {
+        "_DS_AnimalBone_Small": 3,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 5
+      }, {
+        "_DS_AnimalBone_Large": 1
+      }
     ],
     "negativeTreasure": [],
     "sharedDeathItems": "",
@@ -86,35 +66,27 @@
     "carcassSize": "1",
     "carcassWeight": "100",
     "carcassValue": "50",
-    "deathItem": [
-      "_DS_Token_Pelt", "1",
-      "_DS_Token_Carcass_Clean", "1",
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "1",
-      "_DS_Token_Meat_Fresh", "1",
-      "CreaturePerkIngrCowOxgall_KRY", "1"
-    ],
     "peltCount": ["2", "1", "2", "2"],
     "furPlateCount": ["1", "1", "2", "3"],
     "meat": "FoodBeef",
-    "mats": [
-      [
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "_DS_AnimalBone_Small", "3",
-        "_DS_LI_Mats__AnimalBladder", "1",
-        "_DS_LI_Mats__AnimalFat", "4"
-      ],
-      [
-        "_DS_AnimalBone_Small", "6",
-        "_DS_Food_OxHeart", "1",
-        "_DS_LI_Mats__AnimalBladder", "1",
-        "_DS_LI_Mats__AnimalFat", "4"
-      ],
-      [
-        "_DS_AnimalBone_Large", "1"
-      ]
+    "mats": [{
+        "CreaturePerkIngrCowOxgall_KRY": 1,
+        "_DS_AnimalBone_Small": 1
+
+      }, {
+        "CreaturePerkIngrCowOxgall_KRY": 1,
+        "_DS_AnimalBone_Small": 3,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 4
+      }, {
+        "CreaturePerkIngrCowOxgall_KRY": 1,
+        "_DS_AnimalBone_Small": 6,
+        "_DS_Food_OxHeart": 1,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 4
+      }, {
+        "_DS_AnimalBone_Large": 1
+      }
     ],
     "negativeTreasure": [],
     "sharedDeathItems": "",
@@ -129,35 +101,24 @@
     "carcassSize": "2",
     "carcassWeight": "300",
     "carcassValue": "100",
-    "deathItem": [
-      "_DS_Token_Pelt", "1",
-      "_DS_Token_Carcass_Clean", "1",
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "2",
-      "_DS_Token_Meat_Fresh", "1"
-    ],
     "peltCount": ["4", "2", "2", "2"],
     "furPlateCount": ["1", "2", "4", "8"],
     "meat": "CACO_FoodMeatSheepRaw",
-    "mats": [
-      [
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "_DS_AnimalBone_Small", "2",
-        "BYOHLItemHornGoat50", "1",
-        "_DS_LI_Mats__AnimalBladder", "1",
-        "_DS_LI_Mats__AnimalFat", "5"
-      ],
-      [
-        "_DS_AnimalBone_Small", "3",
-        "BYOHLItemHornGoat50", "2",
-        "_DS_LI_Mats__AnimalBladder", "1",
-        "_DS_LI_Mats__AnimalFat", "5"
-      ],
-      [
-        "_DS_AnimalBone_Large", "1"
-      ]
+    "mats": [{
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 2,
+        "BYOHLItemHornGoat50": 1,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 5
+      }, {
+        "_DS_AnimalBone_Small": 3,
+        "BYOHLItemHornGoat50": 2,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 5
+      }, {
+        "_DS_AnimalBone_Large": 1
+      }
     ],
     "negativeTreasure": [],
     "sharedDeathItems": "",
@@ -172,32 +133,22 @@
     "carcassSize": "1",
     "carcassWeight": "100",
     "carcassValue": "50",
-    "deathItem": [
-      "_DS_Token_Carcass_Clean", "1",
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "1",
-      "_DS_Token_Meat_Fresh", "1"
-    ],
     "peltCount": ["4", "2", "2", "2"],
     "furPlateCount": ["1", "2", "4", "8"],
     "meat": "CACO_FoodMeatSheepRaw",
-    "mats": [
-      [
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "_DS_AnimalBone_Small", "2",
-        "_DS_LI_Mats__AnimalBladder", "1",
-        "_DS_LI_Mats__AnimalFat", "5"
-      ],
-      [
-        "_DS_AnimalBone_Small", "3",
-        "_DS_LI_Mats__AnimalBladder", "1",
-        "_DS_LI_Mats__AnimalFat", "5"
-      ],
-      [
-        "_DS_AnimalBone_Large", "1"
-      ]
+    "mats": [{
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 2,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 5
+      }, {
+        "_DS_AnimalBone_Small": 3,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 5
+      }, {
+        "_DS_AnimalBone_Large": 1
+      }
     ],
     "negativeTreasure": [],
     "sharedDeathItems": "",
@@ -212,33 +163,22 @@
     "carcassSize": "2",
     "carcassWeight": "200",
     "carcassValue": "100",
-    "deathItem": [
-      "_DS_Token_Pelt", "1",
-      "_DS_Token_Carcass_Clean", "1",
-      "_DS_Token_Mat", "1",
-      "_DS_Token_Meat", "1",
-      "_DS_Token_Meat_Fresh", "1"
-    ],
     "peltCount": ["4", "2", "2", "2"],
     "furPlateCount": ["1", "2", "4", "8"],
     "meat": "CACO_FoodMeatSheepRaw",
-    "mats": [
-      [
-        "_DS_AnimalBone_Small", "1"
-      ],
-      [
-        "_DS_AnimalBone_Small", "2",
-        "_DS_LI_Mats__AnimalBladder", "1",
-        "_DS_LI_Mats__AnimalFat", "5"
-      ],
-      [
-        "_DS_AnimalBone_Small", "3",
-        "_DS_LI_Mats__AnimalBladder", "1",
-        "_DS_LI_Mats__AnimalFat", "5"
-      ],
-      [
-        "_DS_AnimalBone_Large", "1"
-      ]
+    "mats": [{
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 2,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 5
+      }, {
+        "_DS_AnimalBone_Small": 3,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 5
+      }, {
+        "_DS_AnimalBone_Large": 1
+      }
     ],
     "negativeTreasure": [],
     "sharedDeathItems": "",

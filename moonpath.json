@@ -1,173 +1,134 @@
 [{
-	"type": "animal",
-	"name": "Rivercrab",
-	"animalSwitch": "_DS_Hunterborn_IncludeMudcrab",
-	"carcassMessageBox": "_DS_MsgBox_FreshCarcass_Clean",
-	"carcassSize": "1",
-	"carcassWeight": "30",
-	"carcassValue": "5",
-	"deathItem": [
-		"_DS_Token_Carcass_Clean", "1",
-		"_DS_Token_Mat", "1",
-		"_DS_Token_Meat", "1",
-		"_DS_Token_Meat_Fresh", "1"
-	],
-	"peltCount": ["2", "1", "2", "2"],
-	"furPlateCount": ["1", "2", "4", "8"],
-	"meat": "FoodAnvilRivercrabmeat",
-	"mats": [
-		[
-			"Anvil_rivercrabChitin", "1"
-		],
-		[
-			"Anvil_rivercrabChitin", "1"
-		],
-		[
-			"Anvil_rivercrabChitin", "1"
-		],
-		[
-			"_DS_AnimalBone_Small", "1"
-		]
-	],
-	"negativeTreasure": [],
-	"sharedDeathItems": "",
-	"bloodType": "",
-	"venom": "",
-	"voice": "CrMudcrabVoice"
-}, {
-	"type": "monster",
-	"name": "JungleQueen",
-	"animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
-	"carcassMessageBox": "",
-	"carcassSize": "5",
-	"carcassWeight": "",
-	"carcassValue": "",
-	"deathItem": [
-		"_DS_Token_Mat", "1",
-		"_DS_Token_Meat", "1",
-		"_DS_Token_Meat_Fresh", "1",
-		"_DS_Token_Venom", "1"
-	],
-	"peltCount": ["2", "1", "2", "2"],
-	"furPlateCount": ["1", "1", "2", "3"],
-	"meat": "_DS_Food_Raw_Spider",
-	"mats": [
-		[
-			"SpiderEgg", "1",
-			"_DS_AnimalBone_Small", "1"
-		],
-		[
-			"SpiderEgg", "1",
-			"_DS_AnimalBone_Small", "1"
-		],
-		[
-			"SpiderEgg", "2",
-			"_DS_AnimalBone_Small", "1"
-		],
-		[
-			"_DS_AnimalBone_Small", "1"
-		]
-	],
-	"negativeTreasure": ["Anvil_PoisonbiteVenom"],
-	"sharedDeathItems": "",
-	"bloodType": "",
-	"venom": "Anvil_PoisonbiteVenom",
-	"voice": "CrFrostbiteSpiderGiantVoice"
-}, {
-	"type": "animal",
-	"name": "Hyena",
-	"animalSwitch": "",
-	"carcassMessageBox": "_DS_MsgBox_FreshCarcass",
-	"carcassSize": "2",
-	"carcassWeight": "50",
-	"carcassValue": "10",
-	"deathItem": [
-		"_DS_Token_Carcass_Clean", "1",
-		"_DS_Token_Meat", "1",
-		"_DS_Token_Meat_Fresh", "1"
-	],
-	"peltCount": ["2", "1", "2", "2"],
-	"furPlateCount": ["1", "1", "2", "3"],
-	"meat": "Food_Anvil_hyenaMeat",
-	"mats": [],
-	"negativeTreasure": [],
-	"sharedDeathItems": "",
-	"bloodType": "",
-	"venom": "",
-	"voice": "CrWolfVoice"
-}, {
-	"type": "monster",
-	"name": "Siligonder",
-	"animalSwitch": "",
-	"carcassMessageBox": "",
-	"carcassSize": "3",
-	"carcassWeight": "",
-	"carcassValue": "",
-	"deathItem": [
-		"_DS_Token_Mat", "1"
-	],
-	"peltCount": ["2", "1", "2", "2"],
-	"furPlateCount": ["1", "1", "2", "3"],
-	"meat": "",
-	"mats": [
-		[
-			"Anvil_siligonderChitin", "1"
-		],
-		[
-			"ChaurusEggs", "1",
-			"Anvil_siligonderChitin", "1"
-		],
-		[
-			"Anvil_siligonder_egg", "2",
-			"Anvil_siligonderChitin", "1"
-		],
-		[
-			"Anvil_siligonder_egg", "1",
-			"_DS_AnimalBone_Small", "1",
-			"_DS_AnimalBone_Large", "1"
-		]
-	],
-	"negativeTreasure": ["Anvil_siligonderChitin", "Anvil_siligonder_egg"],
-	"sharedDeathItems": "",
-	"bloodType": "",
-	"venom": "",
-	"voice": "CrChaurusVoice"
-}, {
-	"type": "animal",
-	"name": "Guar",
-	"animalSwitch": "",
-	"carcassMessageBox": "",
-	"carcassSize": "3",
-	"carcassWeight": "50",
-	"carcassValue": "10",
-	"deathItem": [
-		"_DS_Token_Carcass_Clean", "1",
-		"_DS_Token_Mat", "1"
-	],
-	"peltCount": ["2", "1", "2", "2"],
-	"furPlateCount": ["1", "1", "2", "3"],
-	"meat": "",
-	"mats": [
-		[
-			"AnvilGuartooth", "1"
-		],
-		[
-			"AnvilGuartooth", "1",
-			"anvilGuareyeball", "1"
-		],
-		[
-			"AnvilGuartooth", "2",
-			"anvilGuareyeball", "2"
-		],
-		[
-			"AnvilGuartooth", "1",
-			"_DS_AnimalBone_Small", "1",
-			"_DS_AnimalBone_Large", "1"
-		]
-	],
-	"negativeTreasure": ["AnvilGuartooth", "anvilGuareyeball"],
-	"sharedDeathItems": "",
-	"bloodType": "",
-	"venom": "",
-	"voice": "CrWerewolfVoice"
-}]
+    "type": "animal",
+    "name": "Rivercrab",
+    "animalSwitch": "_DS_Hunterborn_IncludeMudcrab",
+    "carcassMessageBox": "_DS_MsgBox_FreshCarcass_Clean",
+    "carcassSize": "1",
+    "carcassWeight": "30",
+    "carcassValue": "5",
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "2", "4", "8"],
+    "meat": "FoodAnvilRivercrabmeat",
+    "mats": [{
+        "Anvil_rivercrabChitin": 1
+      }, {
+        "Anvil_rivercrabChitin": 1
+      }, {
+        "Anvil_rivercrabChitin": 1
+      }, {
+        "_DS_AnimalBone_Small": 1
+      }
+    ],
+    "negativeTreasure": [],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrMudcrabVoice"
+  }, {
+    "type": "monster",
+    "name": "JungleQueen",
+    "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
+    "carcassMessageBox": "",
+    "carcassSize": "5",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "_DS_Food_Raw_Spider",
+    "mats": [{
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "SpiderEgg": 2,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 1
+      }
+    ],
+    "negativeTreasure": ["Anvil_PoisonbiteVenom"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "Anvil_PoisonbiteVenom",
+    "voice": "CrFrostbiteSpiderGiantVoice"
+  }, {
+    "type": "animal",
+    "name": "Hyena",
+    "animalSwitch": "",
+    "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
+    "carcassSize": "2",
+    "carcassWeight": "50",
+    "carcassValue": "10",
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "Food_Anvil_hyenaMeat",
+    "mats": [],
+    "negativeTreasure": [],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrWolfVoice"
+  }, {
+    "type": "monster",
+    "name": "Siligonder",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
+    "carcassSize": "3",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "",
+    "mats": [{
+        "Anvil_siligonderChitin": 1
+      }, {
+        "ChaurusEggs": 1,
+        "Anvil_siligonderChitin": 1
+      }, {
+        "Anvil_siligonder_egg": 2,
+        "Anvil_siligonderChitin": 1
+      }, {
+        "Anvil_siligonder_egg": 1,
+        "_DS_AnimalBone_Small": 1,
+        "_DS_AnimalBone_Large": 1
+      }
+    ],
+    "negativeTreasure": ["Anvil_siligonderChitin", "Anvil_siligonder_egg"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrChaurusVoice"
+  }, {
+    "type": "animal",
+    "name": "Guar",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
+    "carcassSize": "3",
+    "carcassWeight": "50",
+    "carcassValue": "10",
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "",
+    "mats": [{
+        "AnvilGuartooth": 1
+      }, {
+        "AnvilGuartooth": 1,
+        "anvilGuareyeball": 1
+      }, {
+        "AnvilGuartooth": 2,
+        "anvilGuareyeball": 2
+      }, {
+        "AnvilGuartooth": 1,
+        "_DS_AnimalBone_Small": 1,
+        "_DS_AnimalBone_Large": 1
+      }
+    ],
+    "negativeTreasure": ["AnvilGuartooth", "anvilGuareyeball"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrWerewolfVoice"
+  }
+]

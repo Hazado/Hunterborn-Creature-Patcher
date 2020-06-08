@@ -304,17 +304,19 @@ let CreateMats = function (animalType, animalRecord, jsonRecord, patch) {
     } else {
       xelib.AddFormID(flstRecords["_DS_FL_Mats__Lists_Monsters"], xelib.GetValue(formList));
     }
-    for (let x = 0; x < jsonRecord.mats.length; x++) {
+    Object.keys(jsonRecord.mats).forEach(key => {
       let MatsLvl = xelib.CopyElement(lvliRecords['_DS_LI_Mats_Cow_00'], patch, true);
-      xelib.SetValue(MatsLvl, 'EDID', `_DS_LI_Mats_${animalRecord}_0${x}`);
+      xelib.SetValue(MatsLvl, 'EDID', `_DS_LI_Mats_${animalRecord}_0${key}`);
       let edid = xelib.EditorID(MatsLvl);
       lvliRecords[edid] = MatsLvl;
       xelib.AddFormID(formList, xelib.LongName(MatsLvl));
       xelib.RemoveElement(MatsLvl, 'Leveled List Entries');
-      for (let y = 0; y < (jsonRecord.mats[x].length); y = y + 2) {
-        xelib.AddLeveledEntry(MatsLvl, jsonRecord.mats[x][y], "1", jsonRecord.mats[x][y + 1]);
-      };
-    }
+      let value = jsonRecord.mats[key];
+      Object.keys(value).forEach(key2 => {
+        let value2 = value[key2];
+        xelib.AddLeveledEntry(MatsLvl, key2, "1", value2.toString());
+      });
+    });
   }
 };
 
@@ -415,9 +417,15 @@ let CreateNewDeathItem = function (animalType, animalRecord, npc, jsonRecord, pa
     let edid = xelib.EditorID(NewDeathItem);
     lvliRecords[edid] = NewDeathItem;
     xelib.RemoveElement(NewDeathItem, 'Leveled List Entries');
-    for (let x = 0; x < jsonRecord.deathItem.length; x = x + 2) {
-      xelib.AddLeveledEntry(NewDeathItem, jsonRecord.deathItem[x], "1", jsonRecord.deathItem[x + 1]);
+    if (GetDefaultPelt(npc) != undefined) xelib.AddLeveledEntry(NewDeathItem, "_DS_Token_Pelt", "1", "1");
+    if (jsonRecord.type == "animal") xelib.AddLeveledEntry(NewDeathItem, "_DS_Token_Carcass_Clean", "1", "1");
+    if (jsonRecord.mats.length != 0) xelib.AddLeveledEntry(NewDeathItem, "_DS_Token_Mat", "1", "1");
+    if (jsonRecord.meat != "") {
+      xelib.AddLeveledEntry(NewDeathItem, "_DS_Token_Meat", "1", "1");
+      xelib.AddLeveledEntry(NewDeathItem, "_DS_Token_Meat_Fresh", "1", "1");
     }
+    if (jsonRecord.type == "monster" && jsonRecord.venom != "") xelib.AddLeveledEntry(NewDeathItem, "_DS_Token_Venom", "1", "1");
+    if (jsonRecord.type == "monster" && jsonRecord.bloodType != "") xelib.AddLeveledEntry(NewDeathItem, "_DS_Token_Blood", "1", "1");
   }
 
   if (!monsterTypes.includes(animalType)) {
@@ -869,6 +877,7 @@ let settingsController = function ($scope, referenceService, progressService, er
       records.forEach(function (rec, index) {
         let msg = `Getting creature information (${index}/${len})`;
         progressService.progressMessage(msg);
+        rec = xelib.GetWinningOverride(rec);
         buildDeathItem($scope.items, rec);
       });
     });
