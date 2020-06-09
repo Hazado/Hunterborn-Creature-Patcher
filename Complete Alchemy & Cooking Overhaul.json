@@ -1,35 +1,5 @@
 [{
     "type": "animal",
-    "name": "Piglet",
-    "animalSwitch": "",
-    "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
-    "carcassSize": "1",
-    "carcassWeight": "50",
-    "carcassValue": "50",
-    "peltCount": ["2", "1", "2", "2"],
-    "furPlateCount": ["1", "1", "2", "3"],
-    "meat": "CACO_FoodMeatPork",
-    "mats": [{
-        "_DS_AnimalBone_Small": 1
-      }, {
-        "_DS_AnimalBone_Small": 2,
-        "_DS_LI_Mats__AnimalBladder": 1,
-        "_DS_LI_Mats__AnimalFat": 2
-      }, {
-        "_DS_AnimalBone_Small": 3,
-        "_DS_LI_Mats__AnimalBladder": 1,
-        "_DS_LI_Mats__AnimalFat": 2
-      }, {
-        "_DS_AnimalBone_Small": 5
-      }
-    ],
-    "negativeTreasure": [],
-    "sharedDeathItems": "",
-    "bloodType": "",
-    "venom": "",
-    "voice": "DLC2CrBristlebackVoice"
-  }, {
-    "type": "animal",
     "name": "Pig",
     "animalSwitch": "",
     "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
@@ -51,6 +21,36 @@
         "_DS_LI_Mats__AnimalFat": 5
       }, {
         "_DS_AnimalBone_Large": 1
+      }
+    ],
+    "negativeTreasure": [],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "DLC2CrBristlebackVoice"
+  }, {
+    "type": "animal",
+    "name": "Piglet",
+    "animalSwitch": "",
+    "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
+    "carcassSize": "1",
+    "carcassWeight": "50",
+    "carcassValue": "50",
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "CACO_FoodMeatPork",
+    "mats": [{
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 2,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 2
+      }, {
+        "_DS_AnimalBone_Small": 3,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 2
+      }, {
+        "_DS_AnimalBone_Small": 5
       }
     ],
     "negativeTreasure": [],
@@ -95,6 +95,36 @@
     "voice": "CrCowVoice"
   }, {
     "type": "animal",
+    "name": "Sheep",
+    "animalSwitch": "",
+    "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
+    "carcassSize": "2",
+    "carcassWeight": "200",
+    "carcassValue": "100",
+    "peltCount": ["4", "2", "2", "2"],
+    "furPlateCount": ["1", "2", "4", "8"],
+    "meat": "CACO_FoodMeatSheepRaw",
+    "mats": [{
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 2,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 5
+      }, {
+        "_DS_AnimalBone_Small": 3,
+        "_DS_LI_Mats__AnimalBladder": 1,
+        "_DS_LI_Mats__AnimalFat": 5
+      }, {
+        "_DS_AnimalBone_Large": 1
+      }
+    ],
+    "negativeTreasure": [],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrGoatVoice"
+  }, {
+    "type": "animal",
     "name": "Ram",
     "animalSwitch": "",
     "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
@@ -133,36 +163,6 @@
     "carcassSize": "1",
     "carcassWeight": "100",
     "carcassValue": "50",
-    "peltCount": ["4", "2", "2", "2"],
-    "furPlateCount": ["1", "2", "4", "8"],
-    "meat": "CACO_FoodMeatSheepRaw",
-    "mats": [{
-        "_DS_AnimalBone_Small": 1
-      }, {
-        "_DS_AnimalBone_Small": 2,
-        "_DS_LI_Mats__AnimalBladder": 1,
-        "_DS_LI_Mats__AnimalFat": 5
-      }, {
-        "_DS_AnimalBone_Small": 3,
-        "_DS_LI_Mats__AnimalBladder": 1,
-        "_DS_LI_Mats__AnimalFat": 5
-      }, {
-        "_DS_AnimalBone_Large": 1
-      }
-    ],
-    "negativeTreasure": [],
-    "sharedDeathItems": "",
-    "bloodType": "",
-    "venom": "",
-    "voice": "CrGoatVoice"
-  }, {
-    "type": "animal",
-    "name": "Sheep",
-    "animalSwitch": "",
-    "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
-    "carcassSize": "2",
-    "carcassWeight": "200",
-    "carcassValue": "100",
     "peltCount": ["4", "2", "2", "2"],
     "furPlateCount": ["1", "2", "4", "8"],
     "meat": "CACO_FoodMeatSheepRaw",

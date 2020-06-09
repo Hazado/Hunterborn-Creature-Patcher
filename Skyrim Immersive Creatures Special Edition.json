@@ -511,7 +511,7 @@
     "voice": "CrGargoyleVoice"
   }, {
     "type": "monster",
-    "name": "DramanNorokdir",
+    "name": "DramanHunter",
     "animalSwitch": "",
     "carcassMessageBox": "",
     "carcassSize": "5",

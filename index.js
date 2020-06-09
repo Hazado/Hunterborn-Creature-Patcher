@@ -1,10 +1,10 @@
 /* global ngapp, xelib, registerPatcher */
 let knownDeathItemsAnimals, knownDeathItemsMonsters;
-let forbiddenFactions = ['DaedraFaction', 'DLC1UndeadGuardianFaction', 'DLC1VampireFaction', 'DLC1VampireCompanionFaction', 'DLC2AshSpawnFaction', 'DLC2BenthicLurkerFaction', 'DLC2NetchFaction', 'DragonPriestFaction', 'DraugrFaction', 'DremoraFaction', 'DwarvenAutomatonFaction', 'FalmerFaction', 'GiantFaction', 'HagravenFaction', 'IceWraithFaction', 'SkeletonFaction', 'SoulCairnFaction', 'SprigganFaction', 'VampireFaction', 'WispFaction'];
-let allowedVoice = ['CrBearVoice', 'CrChickenVoice', 'CrCowVoice', 'CrDeerVoice', 'CrDogVoice', 'CrDogHusky', 'CrFoxVoice', 'CrGoatVoice', 'CrHareVoice', 'CrHorkerVoice', 'CrHorseVoice', 'CrMammothVoice', 'CrMudcrabVoice', 'CrSabreCatVoice', 'CrSkeeverVoice', 'CrSlaughterfishVoice', 'CrWolfVoice', 'DLC2CrBristlebackVoice', 'CrChaurusVoice', 'CrFrostbiteSpiderVoice', 'CrFrostbiteSpiderGiantVoice', 'CrTrollVoice', 'CrWerewolfVoice', 'CrDragonVoice', 'CrChaurusInsectVoice'];
-let animalTypes = ['Skip', 'Bear', 'Bear, Cave', 'Bear, Snow', 'Bristleback', 'Chaurus', 'Chaurus Hunter', 'Chicken', 'Cow', 'Deer', 'Dog', 'Dragon', 'Elk, Female', 'Elk, Male', 'Fox', 'Fox, Snow', 'Frost Troll', 'Frostbite Spider', 'Frostbite Spider, Giant', 'Goat', 'Hare', 'Horker', 'Horse', 'Mammoth', 'MudCrab, Small', 'MudCrab, Large', 'MudCrab, Giant', 'Sabrecat', 'Skeever', 'Slaughterfish', 'Troll', 'Vale Deer', 'Vale Sabrecat', 'Werebear', 'Werewolf', 'Wolf', 'Wolf, Ice'];
-let deathItemNameMatch = ['Werebear', 'Bear', 'Bristleback', 'Chaurus', 'CharusHunter', 'Chicken', 'Cow', 'Deer', 'Dog', 'Dragon', 'Elk', 'Fox', 'FrostbiteSpiderGiant', 'FrostbiteSpider', 'Goat', 'Hare', 'Horker', 'Horse', 'Mammoth', 'MudCrab', 'Sabrecat', 'Skeever', 'Slaughterfish', 'Troll', 'Werewolf', 'Wolf'];
-let monsterTypes = ['Chaurus', 'FrostbiteSpiderGiant', 'FrostbiteSpider', 'Troll', 'Werebear', 'Werewolf', 'Dragon'];
+let forbiddenFactions = ['DaedraFaction', 'DLC1UndeadGuardianFaction', 'DLC1VampireFaction', 'DLC1VampireCompanionFaction', 'DLC2AshSpawnFaction', 'DLC2BenthicLurkerFaction', 'DLC2NetchFaction', 'DragonPriestFaction', 'DraugrFaction', 'DremoraFaction', 'DwarvenAutomatonFaction', 'FalmerFaction', 'GiantFaction', 'HagravenFaction', 'IceWraithFaction', 'SkeletonFaction', 'SoulCairnFaction', 'VampireFaction', 'WispFaction'];
+let allowedVoice = ['CrBearVoice', 'CrChickenVoice', 'CrCowVoice', 'CrDeerVoice', 'CrDogVoice', 'CrDogHusky', 'CrFoxVoice', 'CrGoatVoice', 'CrHareVoice', 'CrHorkerVoice', 'CrHorseVoice', 'CrMammothVoice', 'CrMudcrabVoice', 'CrSabreCatVoice', 'CrSkeeverVoice', 'CrSlaughterfishVoice', 'CrWolfVoice', 'DLC2CrBristlebackVoice', 'CrChaurusVoice', 'CrFrostbiteSpiderVoice', 'CrFrostbiteSpiderGiantVoice', 'CrSprigganVoice', 'CrTrollVoice', 'CrWerewolfVoice', 'CrDragonVoice', 'CrChaurusInsectVoice'];
+let animalTypes = ['Skip', 'Bear', 'Bear, Cave', 'Bear, Snow', 'Bristleback', 'Chaurus', 'Chaurus Hunter', 'Chicken', 'Cow', 'Deer', 'Dog', 'Dragon', 'Elk, Female', 'Elk, Male', 'Fox', 'Fox, Snow', 'Frost Troll', 'Goat', 'Hare', 'Horker', 'Horse', 'Mammoth', 'MudCrab, Small', 'MudCrab, Large', 'MudCrab, Giant', 'Sabrecat', 'Skeever', 'Slaughterfish', 'Spider, Frostbite', 'Spider, Giant Frostbite', 'Spriggan', 'Spriggan, Burnt', 'Troll', 'Vale Deer', 'Vale Sabrecat', 'Werebear', 'Werewolf', 'Wolf', 'Wolf, Ice'];
+let deathItemNameMatch = ['Werebear', 'Bear', 'Bristleback', 'Chaurus', 'CharusHunter', 'Chicken', 'Cow', 'Deer', 'Dog', 'Dragon', 'Elk', 'Fox', 'FrostbiteSpiderGiant', 'FrostbiteSpider', 'Goat', 'Hare', 'Horker', 'Horse', 'Mammoth', 'MudCrab', 'Sabrecat', 'Skeever', 'Slaughterfish', 'Spriggan', 'SprigganBurnt', 'Troll', 'Werewolf', 'Wolf'];
+let monsterTypes = ['Chaurus', 'FrostbiteSpiderGiant', 'FrostbiteSpider', 'Spriggan', 'SprigganBurnt', 'Troll', 'Werebear', 'Werewolf', 'Dragon'];
 let blacklistedRecords = ['HISLCBlackWolf', 'BSKEncRat'];
 let blacklistedDeathItems = ['DLC1DeathItemDragon06', 'DLC1DeathItemDragon07'];
 let cobjRecords = {};
@@ -26,12 +26,13 @@ let fixedAnimalTypes = {
   'Elk, Female': 'ElkFemale',
   'Elk, Male': 'ElkMale',
   'Fox, Snow': 'FoxIce',
-  'Frostbite Spider': 'FrostbiteSpider',
-  'Frostbite Spider, Giant': 'FrostbiteSpiderGiant',
   'MudCrab, Small': 'MudCrab01',
   'MudCrab, Large': 'MudCrab02',
   'MudCrab, Giant': 'MudCrab03',
   'Sabrecat, Snow': 'SabrecatSnow',
+  'Spider, Frostbite': 'FrostbiteSpider',
+  'Spider, Giant Frostbite': 'FrostbiteSpiderGiant',
+  'Spriggan, Burnt': 'SprigganBurnt',
   'Vale Deer': 'DeerVale',
   'Vale Sabrecat': 'SabrecatVale',
   'Wolf, Ice': 'WolfIce',
