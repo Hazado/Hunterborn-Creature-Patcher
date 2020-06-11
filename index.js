@@ -1,6 +1,6 @@
 /* global ngapp, xelib, registerPatcher */
 let knownDeathItemsAnimals, knownDeathItemsMonsters;
-let forbiddenFactions = ['DaedraFaction', 'DLC1UndeadGuardianFaction', 'DLC1VampireFaction', 'DLC1VampireCompanionFaction', 'DLC2AshSpawnFaction', 'DLC2BenthicLurkerFaction', 'DLC2NetchFaction', 'DragonPriestFaction', 'DraugrFaction', 'DremoraFaction', 'DwarvenAutomatonFaction', 'FalmerFaction', 'GiantFaction', 'HagravenFaction', 'IceWraithFaction', 'SkeletonFaction', 'SoulCairnFaction', 'VampireFaction', 'WispFaction'];
+let forbiddenFactions = ['DaedraFaction', 'DLC1UndeadGuardianFaction', 'DLC1VampireFaction', 'DLC1VampireCompanionFaction', 'DLC2AshSpawnFaction', 'DragonPriestFaction', 'DraugrFaction', 'DremoraFaction', 'DwarvenAutomatonFaction', 'FalmerFaction', 'IceWraithFaction', 'SkeletonFaction', 'SoulCairnFaction', 'VampireFaction', 'WispFaction'];
 let allowedVoice = ['CrBearVoice', 'CrChickenVoice', 'CrCowVoice', 'CrDeerVoice', 'CrDogVoice', 'CrDogHusky', 'CrFoxVoice', 'CrGoatVoice', 'CrHareVoice', 'CrHorkerVoice', 'CrHorseVoice', 'CrMammothVoice', 'CrMudcrabVoice', 'CrSabreCatVoice', 'CrSkeeverVoice', 'CrSlaughterfishVoice', 'CrWolfVoice', 'DLC2CrBristlebackVoice', 'CrChaurusVoice', 'CrFrostbiteSpiderVoice', 'CrFrostbiteSpiderGiantVoice', 'CrSprigganVoice', 'CrTrollVoice', 'CrWerewolfVoice', 'CrDragonVoice', 'CrChaurusInsectVoice'];
 let animalTypes = ['Skip', 'Bear', 'Bear, Cave', 'Bear, Snow', 'Bristleback', 'Chaurus', 'Chaurus Hunter', 'Chicken', 'Cow', 'Deer', 'Dog', 'Dragon', 'Elk, Female', 'Elk, Male', 'Fox', 'Fox, Snow', 'Frost Troll', 'Goat', 'Hare', 'Horker', 'Horse', 'Mammoth', 'MudCrab, Small', 'MudCrab, Large', 'MudCrab, Giant', 'Sabrecat', 'Skeever', 'Slaughterfish', 'Spider, Frostbite', 'Spider, Giant Frostbite', 'Spriggan', 'Spriggan, Burnt', 'Troll', 'Vale Deer', 'Vale Sabrecat', 'Werebear', 'Werewolf', 'Wolf', 'Wolf, Ice'];
 let deathItemNameMatch = ['Werebear', 'Bear', 'Bristleback', 'Chaurus', 'CharusHunter', 'Chicken', 'Cow', 'Deer', 'Dog', 'Dragon', 'Elk', 'Fox', 'FrostbiteSpiderGiant', 'FrostbiteSpider', 'Goat', 'Hare', 'Horker', 'Horse', 'Mammoth', 'MudCrab', 'Sabrecat', 'Skeever', 'Slaughterfish', 'Spriggan', 'SprigganBurnt', 'Troll', 'Werewolf', 'Wolf'];
@@ -329,7 +329,7 @@ let GetDefaultPelt = function (npc) {
   let deathItemArray = xelib.GetElements(winningDeathItem, 'Leveled List Entries');
   let entry = deathItemArray.find(function (item) {
     let testItem = xelib.GetRefEditorID(item, 'LVLO\\Reference');
-    return (/Pelt|Hide|Skin|Fur|Wool/i.test(testItem) && !(/LVLI/.test(xelib.GetValue(item, "LVLO\\Reference"))));
+    return (/Pelt|Hide|Skin|Fur|Wool|Leather/i.test(testItem) && !(/LVLI/.test(xelib.GetValue(item, "LVLO\\Reference"))));
   });
   if (entry)
     return xelib.GetLinksTo(entry, 'LVLO\\Reference');
@@ -466,17 +466,17 @@ let CreateRecipe1 = function (Recipes, peltArray, animalType, animalRecord, json
   if (cobjRecords.hasOwnProperty(`_DS_Recipe_Pelt_${animalType}_0${index}`) || cobjRecords.hasOwnProperty(`RecipeLeather${animalType}Hide`) || cobjRecords.hasOwnProperty(`RecipeLeather${animalType}Hide02`) || cobjRecords.hasOwnProperty(`DLC1RecipeLeather${animalType}Hide`)) {
     if (cobjRecords.hasOwnProperty(`_DS_Recipe_Pelt_${animalType}_0${index}`)) {
       Recipes[index] = xelib.CopyElement(cobjRecords[`_DS_Recipe_Pelt_${animalType}_0${index}`], patch, true);
-      xelib.SetValue(Recipes[index], 'Conditions\\[2]\\CTDA - \\Parameter #1', xelib.LongName(peltArray[index]));
+      xelib.SetValue(Recipes[index], 'Conditions\\[4]\\CTDA - \\Parameter #1', xelib.LongName(peltArray[index]));
     } else {
       let oldRecipe = (cobjRecords[`RecipeLeather${animalType}Hide`] || cobjRecords[`RecipeLeather${animalType}Hide02`] || cobjRecords[`DLC1RecipeLeather${animalType}Hide`]);
       Recipes[index] = xelib.CopyElement(oldRecipe, patch, true);
-      xelib.SetValue(Recipes[index], 'Conditions\\[0]\\CTDA - \\Parameter #1', xelib.LongName(peltArray[index]));
+      xelib.SetValue(Recipes[index], 'Conditions\\[3]\\CTDA - \\Parameter #1', xelib.LongName(peltArray[index]));
     }
     oldEdid = xelib.EditorID(Recipes[index]);
     xelib.SetValue(Recipes[index], 'EDID', oldEdid.replace(animalType, animalRecord));
   } else {
     Recipes[index] = xelib.CopyElement(cobjRecords[`_DS_Recipe_Pelt_Mammoth_0${index}`], patch, true);
-    xelib.SetValue(Recipes[index], 'Conditions\\[2]\\CTDA - \\Parameter #1', xelib.LongName(peltArray[index]));
+    xelib.SetValue(Recipes[index], 'Conditions\\[4]\\CTDA - \\Parameter #1', xelib.LongName(peltArray[index]));
     oldEdid = xelib.EditorID(Recipes[index]);
     xelib.SetValue(Recipes[index], 'EDID', oldEdid.replace("Mammoth", animalRecord));
     xelib.SetValue(Recipes[index], 'NAM1', jsonRecord.peltCount[index]);
@@ -500,13 +500,13 @@ let CreateRecipe2 = function (Recipes, peltArray, animalType, animalRecord, json
     oldEdid = xelib.EditorID(Recipes[index2]);
     xelib.SetValue(Recipes[index2], 'EDID', oldEdid.replace(animalType, animalRecord));
     xelib.SetValue(Recipes[index2], 'Items\\[0]\\CNTO - Item\\Item', xelib.LongName(peltArray[index1]));
-    xelib.SetValue(Recipes[index2], 'Conditions\\[3]\\CTDA - \\Parameter #1', xelib.LongName(peltArray[index1]));
+    xelib.SetValue(Recipes[index2], 'Conditions\\[4]\\CTDA - \\Parameter #1', xelib.LongName(peltArray[index1]));
   } else {
     Recipes[index2] = (xelib.CopyElement(cobjRecords[`HB_Recipe_FurPlate_Cow_0${index1}`], patch, true))
     oldEdid = xelib.EditorID(Recipes[index2]);
     xelib.SetValue(Recipes[index2], 'EDID', oldEdid.replace("Cow", animalRecord));
     xelib.SetValue(Recipes[index2], 'Items\\[0]\\CNTO - Item\\Item', xelib.LongName(peltArray[index1]));
-    xelib.SetValue(Recipes[index2], 'Conditions\\[3]\\CTDA - \\Parameter #1', xelib.LongName(peltArray[index1]));
+    xelib.SetValue(Recipes[index2], 'Conditions\\[4]\\CTDA - \\Parameter #1', xelib.LongName(peltArray[index1]));
     xelib.SetValue(Recipes[index2], 'NAM1', jsonRecord.furPlateCount[index1]);
   }
   let edid = xelib.EditorID(Recipes[index2]);
@@ -517,14 +517,14 @@ let CreateRecipe3 = function (Recipes, peltArray, animalType, animalRecord, json
   if (cobjRecords.hasOwnProperty(`RecipeLeatherGoatHide_TreeBark`)) {
     if (cobjRecords.hasOwnProperty(`_DS_Recipe_Pelt_${animalType}_01_TreeBark`)) {
       Recipes[index] = xelib.CopyElement(cobjRecords[`_DS_Recipe_Pelt_${animalType}_01_TreeBark`], patch, true);
-      xelib.SetValue(Recipes[index], 'Conditions\\[2]\\CTDA - \\Parameter #1', xelib.LongName(peltArray[1]));
+      xelib.SetValue(Recipes[index], 'Conditions\\[4]\\CTDA - \\Parameter #1', xelib.LongName(peltArray[1]));
       oldEdid = xelib.EditorID(Recipes[index]);
       xelib.SetValue(Recipes[index], 'EDID', oldEdid.replace(animalType, animalRecord));
       xelib.SetValue(Recipes[index], 'Items\\[0]\\CNTO - Item\\Item', xelib.LongName(peltArray[1]));
     } else if (cobjRecords.hasOwnProperty(`RecipeLeather${animalType}Hide_TreeBark`) || cobjRecords.hasOwnProperty(`RecipeLeather${animalType}Hide02_TreeBark`) || cobjRecords.hasOwnProperty(`DLC1RecipeLeather${animalType}Hide_TreeBark`)) {
       let oldRecipe = (cobjRecords[`RecipeLeather${animalType}Hide_TreeBark`] || cobjRecords[`RecipeLeather${animalType}Hide02_TreeBark`] || cobjRecords[`DLC1RecipeLeather${animalType}Hide_TreeBark`]);
       Recipes[index] = xelib.CopyElement(oldRecipe, patch, true);
-      xelib.SetValue(Recipes[index], 'Conditions\\[0]\\CTDA - \\Parameter #1', xelib.LongName(peltArray[1]));
+      xelib.SetValue(Recipes[index], 'Conditions\\[3]\\CTDA - \\Parameter #1', xelib.LongName(peltArray[1]));
       oldEdid = xelib.EditorID(Recipes[index]);
       xelib.SetValue(Recipes[index], 'EDID', oldEdid.replace(animalType, animalRecord));
       xelib.SetValue(Recipes[index], 'Items\\[0]\\CNTO - Item\\Item', xelib.LongName(peltArray[1]));
@@ -532,7 +532,7 @@ let CreateRecipe3 = function (Recipes, peltArray, animalType, animalRecord, json
       Recipes[index] = xelib.CopyElement(cobjRecords[`_DS_Recipe_Pelt_Mammoth_01_TreeBark`], patch, true);
       xelib.SetValue(Recipes[index], 'NAM1', jsonRecord.peltCount[1]);
       xelib.SetValue(Recipes[index], 'Items\\[1]\\CNTO - Item\\Count', (parseInt(jsonRecord.peltCount[1]) * 4).toString());
-      xelib.SetValue(Recipes[index], 'Conditions\\[2]\\CTDA - \\Parameter #1', xelib.LongName(peltArray[1]));
+      xelib.SetValue(Recipes[index], 'Conditions\\[4]\\CTDA - \\Parameter #1', xelib.LongName(peltArray[1]));
       oldEdid = xelib.EditorID(Recipes[index]);
       xelib.SetValue(Recipes[index], 'EDID', oldEdid.replace("Mammoth", animalRecord));
       xelib.SetValue(Recipes[index], 'Items\\[0]\\CNTO - Item\\Item', xelib.LongName(peltArray[1]));

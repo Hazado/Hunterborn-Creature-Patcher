@@ -75,5 +75,94 @@
     "bloodType": "",
     "venom": "FrostbiteVenom",
     "voice": "CrFrostbiteSpiderVoice"
+  }, {
+    "type": "animal",
+    "name": "AshHopper",
+    "animalSwitch": "",
+    "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
+    "carcassSize": "1",
+    "carcassWeight": "10",
+    "carcassValue": "20",
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "DLC2FoodAshHopperMeat",
+    "mats": [{
+        "DLC2ChitinPlate": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "DLC2FoodAshHopperLeg": 1,
+        "DLC2ChitinPlate": 1,
+        "DLC2AshHopperJelly": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "DLC2FoodAshHopperLeg": 2,
+        "DLC2ChitinPlate": 2,
+        "DLC2AshHopperJelly": 2,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 1
+      }
+    ],
+    "negativeTreasure": [],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrScribVoice"
+  }, {
+    "type": "animal",
+    "name": "Netch",
+    "animalSwitch": "",
+    "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
+    "carcassSize": "1",
+    "carcassWeight": "50",
+    "carcassValue": "100",
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "2", "4", "8"],
+    "meat": "",
+    "mats": [{
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "DLC2NetchJelly": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "DLC2NetchJelly": 2,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 1
+      }
+    ],
+    "negativeTreasure": [],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrNetchVoice"
+  }, {
+    "type": "animal",
+    "name": "NetchCalf",
+    "animalSwitch": "",
+    "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
+    "carcassSize": "1",
+    "carcassWeight": "25",
+    "carcassValue": "50",
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "2", "4", "8"],
+    "meat": "",
+    "mats": [{
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "DLC2NetchJelly": 1,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "DLC2NetchJelly": 2,
+        "_DS_AnimalBone_Small": 1
+      }, {
+        "_DS_AnimalBone_Small": 1
+      }
+    ],
+    "negativeTreasure": [],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrNetchVoice"
   }
 ]
