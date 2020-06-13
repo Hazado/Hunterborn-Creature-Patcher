@@ -539,5 +539,69 @@
     "bloodType": "",
     "venom": "",
     "voice": "CrDragonVoice"
+  }, {
+    "type": "monster",
+    "name": "Wereskeever",
+    "animalSwitch": "_DS_Hunterborn_IncludeMonsterWerewolves",
+    "carcassMessageBox": "",
+    "carcassSize": "3",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["4", "2", "2", "2"],
+    "furPlateCount": ["1", "2", "4", "8"],
+    "meat": "_DS_Food_Raw_Skeever",
+    "mats": [{
+        "SkeeverTail": 1,
+        "_DS_AnimalBone_Small": 2
+      }, {
+        "HumanFlesh": 1,
+        "SkeeverTail": 1,
+        "_DS_AnimalBone_Small": 3,
+        "_DS_LI_Mats__AnimalFat": 5
+      }, {
+        "HumanFlesh": 1,
+        "SkeeverTail": 2,
+        "_DS_AnimalBone_Small": 4,
+        "_DS_LI_Mats__AnimalFat": 5
+      }, {
+        "HumanFlesh": 1,
+        "_DS_AnimalBone_Large": 1
+      }
+    ],
+    "negativeTreasure": ["_DS_Pelt_Skeever_01", "HumanFlesh", "SkeeverTail"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrWerewolfVoice"
+  }, {
+    "type": "monster",
+    "name": "Daedroth",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
+    "carcassSize": "5",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["4", "2", "2", "2"],
+    "furPlateCount": ["1", "2", "4", "8"],
+    "meat": "",
+    "mats": [{
+        "_DS_AnimalBone_Small": 2
+      }, {
+        "HumanFlesh": 1,
+        "_DS_AnimalBone_Small": 3,
+        "_DS_LI_Mats__AnimalFat": 5
+      }, {
+        "HumanFlesh": 1,
+        "_DS_AnimalBone_Small": 4,
+        "_DS_LI_Mats__AnimalFat": 5
+      }, {
+        "_DS_AnimalBone_Large": 1
+      }
+    ],
+    "negativeTreasure": ["WolfPelt", "HumanFlesh"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrWerewolfVoice"
   }
 ]

@@ -418,15 +418,20 @@ let CreateNewDeathItem = function (animalType, animalRecord, npc, jsonRecord, pa
     let edid = xelib.EditorID(NewDeathItem);
     lvliRecords[edid] = NewDeathItem;
     xelib.RemoveElement(NewDeathItem, 'Leveled List Entries');
-    if (GetDefaultPelt(npc) != undefined) xelib.AddLeveledEntry(NewDeathItem, "_DS_Token_Pelt", "1", "1");
-    if (jsonRecord.type == "animal") xelib.AddLeveledEntry(NewDeathItem, "_DS_Token_Carcass_Clean", "1", "1");
-    if (jsonRecord.mats.length != 0) xelib.AddLeveledEntry(NewDeathItem, "_DS_Token_Mat", "1", "1");
+    if (GetDefaultPelt(npc) != undefined)
+      xelib.AddLeveledEntry(NewDeathItem, "_DS_Token_Pelt", "1", "1");
+    if (jsonRecord.type == "animal")
+      xelib.AddLeveledEntry(NewDeathItem, "_DS_Token_Carcass_Clean", "1", "1");
+    if (jsonRecord.mats.length != 0)
+      xelib.AddLeveledEntry(NewDeathItem, "_DS_Token_Mat", "1", "1");
     if (jsonRecord.meat != "") {
       xelib.AddLeveledEntry(NewDeathItem, "_DS_Token_Meat", "1", "1");
       xelib.AddLeveledEntry(NewDeathItem, "_DS_Token_Meat_Fresh", "1", "1");
     }
-    if (jsonRecord.type == "monster" && jsonRecord.venom != "") xelib.AddLeveledEntry(NewDeathItem, "_DS_Token_Venom", "1", "1");
-    if (jsonRecord.type == "monster" && jsonRecord.bloodType != "") xelib.AddLeveledEntry(NewDeathItem, "_DS_Token_Blood", "1", "1");
+    if (jsonRecord.type == "monster" && jsonRecord.venom != "")
+      xelib.AddLeveledEntry(NewDeathItem, "_DS_Token_Venom", "1", "1");
+    if (jsonRecord.type == "monster" && jsonRecord.bloodType != "")
+      xelib.AddLeveledEntry(NewDeathItem, "_DS_Token_Blood", "1", "1");
   }
 
   if (!monsterTypes.includes(animalType)) {
@@ -735,6 +740,16 @@ let AnimalIndex = function (aiIndex, animalType, jsonRecord, patch) {
   }
 };
 
+let ModifyDeathItem = function (npc, patch) {
+  let deathItem = xelib.GetLinksTo(npc, 'INAM');
+  let deathItemWinning = xelib.GetWinningOverride(deathItem);
+  let deathItemFlag = xelib.GetValue(deathItemWinning, 'LVLF');
+  if (deathItemFlag != "001") {
+      let newDeathItem = xelib.CopyElement(deathItemWinning, patch);
+      xelib.SetValue(newDeathItem, "LVLF", "001");
+  }
+};
+
 let addRecords = function (npc, animalType, patch) {
   if (animalType != "Skip" && !miscRecords['_DS_DI' + xelib.GetValue(npc, 'INAM').replace('DeathItem', '').replace(/ \[LVLI.*/i, '')]) {
 
@@ -809,6 +824,9 @@ let addRecords = function (npc, animalType, patch) {
     AnimalIndex(aiIndex, animalType, jsonRecord, patch);
     if (debugging)
       console.log(18);
+    ModifyDeathItem(npc, patch);
+    if (debugging)
+      console.log(19);
   }
 };
 
