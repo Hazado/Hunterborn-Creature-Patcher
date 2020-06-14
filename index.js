@@ -77,6 +77,37 @@ let animalTypeIndex = {
   'Dragon': 7
 };
 
+let vanillaToCaco =  {
+  '_DS_Food_Raw_Bear' : 'CACO_FoodMeatBear',
+  '_DS_Food_Raw_Chaurus' : 'CACO_FoodMeatChaurusMeat',
+  '_DS_Food_Raw_Dragon' : '_DS_Food_Raw_Dragon',
+  '_DS_Food_Raw_Elk' : 'FoodMeatVenison',
+  '_DS_Food_Raw_Fox' : 'CACO_FoodMeatFox',
+  '_DS_Food_Raw_Goat' : 'CACO_FoodMeatGoatPortionRaw',
+  '_DS_Food_Raw_Hare' : '_DS_Food_Raw_Hare',
+  '_DS_Food_Raw_Mammoth' : 'CACO_FoodMeatMammoth',
+  '_DS_Food_Raw_Mudcrab' : '_DS_Food_Raw_Mudcrab',
+  '_DS_Food_Raw_Sabrecat' : 'CACO_FoodMeatSabre',
+  '_DS_Food_Raw_Skeever' : 'CACO_FoodMeatSkeeverRaw',
+  '_DS_Food_Raw_Slaughterfish' : 'CACO_FoodSeaSlaughterfishRaw',
+  '_DS_Food_Raw_Spider' : '_DS_Food_Raw_Spider',
+  '_DS_Food_Raw_Troll' : 'CACO_FoodMeatTroll',
+  '_DS_Food_Raw_Wolf' : 'FoodMeatDog',
+  'FoodBeef' : 'FoodMeatBeef',
+  'FoodChicken' : 'FoodMeatChicken',
+  'FoodClamMeat' : 'FoodSeaClam',
+  'FoodDogMeat' : 'FoodMeatDog',
+  'FoodGoatMeat' : 'FoodMeatGoat',
+  'FoodHorkerMeat' : 'FoodMeatHorker',
+  'FoodHorseMeat' : 'FoodMeatHorse',
+  'FoodMammothMeat' : 'FoodMeatMammoth',
+  'FoodPheasant' : 'FoodMeatPheasant',
+  'FoodRabbit' : 'FoodMeatRabbit',
+  'FoodSalmon' : 'FoodSeaSalmon',
+  'FoodVenison' : 'FoodMeatVenison',
+  'HumanFlesh' : 'CACO_FoodMeatHumanoidFlesh',
+};
+
 let loadKnownDeathItemsAnimals = function () {
   let elements = xelib.GetElements(flstRecords['_DS_FL_DeathItems'], 'FormIDs');
   knownDeathItemsAnimals = elements.map(element => xelib.GetValue(element));
@@ -315,6 +346,9 @@ let CreateMats = function (animalType, animalRecord, jsonRecord, patch) {
       let value = jsonRecord.mats[key];
       Object.keys(value).forEach(key2 => {
         let value2 = value[key2];
+        if (xelib.FileByName('Hunterborn_CACO-SE_Patch.esp') > 0) {
+          key2 = vanillaToCaco[key2] || key2;
+        }
         xelib.AddLeveledEntry(MatsLvl, key2, "1", value2.toString());
       });
     });
@@ -438,11 +472,7 @@ let CreateNewDeathItem = function (animalType, animalRecord, npc, jsonRecord, pa
     xelib.AddFormID(flstRecords["_DS_FL_DeathItems"], xelib.GetValue(npc, 'INAM'));
     DeathItemLIArray = xelib.GetScript(qustRecords["_DS_Hunterborn"], "_DS_HB_Animals");
   } else {
-    if (animalType == "Werewolf") {
-      xelib.AddFormID(flstRecords["_DS_FL_DeathItems_Monsters"], "_DS_DeathItem_Werewolf_Dummy");
-    } else {
-      xelib.AddFormID(flstRecords["_DS_FL_DeathItems_Monsters"], xelib.GetValue(npc, 'INAM'));
-    }
+    xelib.AddFormID(flstRecords["_DS_FL_DeathItems_Monsters"], xelib.GetValue(npc, 'INAM'));
     DeathItemLIArray = xelib.GetScript(qustRecords["_DS_Hunterborn"], "_DS_HB_Monsters");
   }
   let DeathItemLIArrayProperty = xelib.GetScriptProperty(DeathItemLIArray, "DeathItemLI");
@@ -653,7 +683,11 @@ let MeatTypes = function (aiIndex, animalType, jsonRecord, patch) {
     let OriginalMeatTypeLink = xelib.GetLinksTo(OriginalMeatType);
     newform = xelib.AddArrayItem(MeatTypesArrayProperty, "Value\\Array of Object", "Object v2\\FormID", xelib.EditorID(alchRecords[xelib.EditorID(OriginalMeatTypeLink)]));
   } else {
-    newform = xelib.AddArrayItem(MeatTypesArrayProperty, "Value\\Array of Object", "Object v2\\FormID", xelib.EditorID(alchRecords[jsonRecord.meat]));
+    let meatRecord = jsonRecord.meat;
+    if (xelib.FileByName('Hunterborn_CACO-SE_Patch.esp') > 0) {
+      meatRecord = vanillaToCaco[meatRecord] || meatRecord;
+    }
+    newform = xelib.AddArrayItem(MeatTypesArrayProperty, "Value\\Array of Object", "Object v2\\FormID", xelib.EditorID(alchRecords[meatRecord]));
   }
   xelib.SetValue(newform, "Object v2\\Alias", "None");
 };
@@ -745,8 +779,8 @@ let ModifyDeathItem = function (npc, patch) {
   let deathItemWinning = xelib.GetWinningOverride(deathItem);
   let deathItemFlag = xelib.GetValue(deathItemWinning, 'LVLF');
   if (deathItemFlag != "001") {
-      let newDeathItem = xelib.CopyElement(deathItemWinning, patch);
-      xelib.SetValue(newDeathItem, "LVLF", "001");
+    let newDeathItem = xelib.CopyElement(deathItemWinning, patch);
+    xelib.SetValue(newDeathItem, "LVLF", "001");
   }
 };
 
