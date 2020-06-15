@@ -1,0 +1,31 @@
+[{
+    "type": "monster",
+    "name": "DragonLava",
+    "animalSwitch": "_DS_Hunterborn_IncludeMonsterDragons",
+    "carcassMessageBox": "",
+    "carcassSize": "7",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["2", "1", "2", "2"],
+    "furPlateCount": ["1", "1", "2", "3"],
+    "meat": "_DS_Food_Raw_Dragon",
+    "mats": [{
+        "DragonBone": 1
+      }, {
+        "DragonBone": 2,
+        "_DS_DragonEyeball": 1
+      }, {
+        "DragonBone": 3,
+        "_DS_DragonEyeball": 2,
+        "_DS_DragonHeart": 1
+      }, {
+        "DragonBone": 1
+      }
+    ],
+    "negativeTreasure": ["DragonBone"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrDragonVoice"
+  }
+]
