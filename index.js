@@ -77,35 +77,35 @@ let animalTypeIndex = {
   'Dragon': 7
 };
 
-let vanillaToCaco =  {
-  '_DS_Food_Raw_Bear' : 'CACO_FoodMeatBear',
-  '_DS_Food_Raw_Chaurus' : 'CACO_FoodMeatChaurusMeat',
-  '_DS_Food_Raw_Dragon' : '_DS_Food_Raw_Dragon',
-  '_DS_Food_Raw_Elk' : 'FoodMeatVenison',
-  '_DS_Food_Raw_Fox' : 'CACO_FoodMeatFox',
-  '_DS_Food_Raw_Goat' : 'CACO_FoodMeatGoatPortionRaw',
-  '_DS_Food_Raw_Hare' : '_DS_Food_Raw_Hare',
-  '_DS_Food_Raw_Mammoth' : 'CACO_FoodMeatMammoth',
-  '_DS_Food_Raw_Mudcrab' : '_DS_Food_Raw_Mudcrab',
-  '_DS_Food_Raw_Sabrecat' : 'CACO_FoodMeatSabre',
-  '_DS_Food_Raw_Skeever' : 'CACO_FoodMeatSkeeverRaw',
-  '_DS_Food_Raw_Slaughterfish' : 'CACO_FoodSeaSlaughterfishRaw',
-  '_DS_Food_Raw_Spider' : '_DS_Food_Raw_Spider',
-  '_DS_Food_Raw_Troll' : 'CACO_FoodMeatTroll',
-  '_DS_Food_Raw_Wolf' : 'FoodMeatDog',
-  'FoodBeef' : 'FoodMeatBeef',
-  'FoodChicken' : 'FoodMeatChicken',
-  'FoodClamMeat' : 'FoodSeaClam',
-  'FoodDogMeat' : 'FoodMeatDog',
-  'FoodGoatMeat' : 'FoodMeatGoat',
-  'FoodHorkerMeat' : 'FoodMeatHorker',
-  'FoodHorseMeat' : 'FoodMeatHorse',
-  'FoodMammothMeat' : 'FoodMeatMammoth',
-  'FoodPheasant' : 'FoodMeatPheasant',
-  'FoodRabbit' : 'FoodMeatRabbit',
-  'FoodSalmon' : 'FoodSeaSalmon',
-  'FoodVenison' : 'FoodMeatVenison',
-  'HumanFlesh' : 'CACO_FoodMeatHumanoidFlesh',
+let vanillaToCaco = {
+  '_DS_Food_Raw_Bear': 'CACO_FoodMeatBear',
+  '_DS_Food_Raw_Chaurus': 'CACO_FoodMeatChaurusMeat',
+  '_DS_Food_Raw_Dragon': '_DS_Food_Raw_Dragon',
+  '_DS_Food_Raw_Elk': 'FoodMeatVenison',
+  '_DS_Food_Raw_Fox': 'CACO_FoodMeatFox',
+  '_DS_Food_Raw_Goat': 'CACO_FoodMeatGoatPortionRaw',
+  '_DS_Food_Raw_Hare': '_DS_Food_Raw_Hare',
+  '_DS_Food_Raw_Mammoth': 'CACO_FoodMeatMammoth',
+  '_DS_Food_Raw_Mudcrab': '_DS_Food_Raw_Mudcrab',
+  '_DS_Food_Raw_Sabrecat': 'CACO_FoodMeatSabre',
+  '_DS_Food_Raw_Skeever': 'CACO_FoodMeatSkeeverRaw',
+  '_DS_Food_Raw_Slaughterfish': 'CACO_FoodSeaSlaughterfishRaw',
+  '_DS_Food_Raw_Spider': '_DS_Food_Raw_Spider',
+  '_DS_Food_Raw_Troll': 'CACO_FoodMeatTroll',
+  '_DS_Food_Raw_Wolf': 'FoodMeatDog',
+  'FoodBeef': 'FoodMeatBeef',
+  'FoodChicken': 'FoodMeatChicken',
+  'FoodClamMeat': 'FoodSeaClam',
+  'FoodDogMeat': 'FoodMeatDog',
+  'FoodGoatMeat': 'FoodMeatGoat',
+  'FoodHorkerMeat': 'FoodMeatHorker',
+  'FoodHorseMeat': 'FoodMeatHorse',
+  'FoodMammothMeat': 'FoodMeatMammoth',
+  'FoodPheasant': 'FoodMeatPheasant',
+  'FoodRabbit': 'FoodMeatRabbit',
+  'FoodSalmon': 'FoodSeaSalmon',
+  'FoodVenison': 'FoodMeatVenison',
+  'HumanFlesh': 'CACO_FoodMeatHumanoidFlesh',
 };
 
 let loadKnownDeathItemsAnimals = function () {
@@ -346,7 +346,7 @@ let CreateMats = function (animalType, animalRecord, jsonRecord, patch) {
       let value = jsonRecord.mats[key];
       Object.keys(value).forEach(key2 => {
         let value2 = value[key2];
-        if (xelib.FileByName('Hunterborn_CACO-SE_Patch.esp') > 0) {
+        if (xelib.FileByName('Hunterborn_CACO-SE_Patch.esp') > 0 || cobjRecords.hasOwnProperty(`HB_CACO_RecipeJerkyHare`)) {
           key2 = vanillaToCaco[key2] || key2;
         }
         xelib.AddLeveledEntry(MatsLvl, key2, "1", value2.toString());
@@ -684,7 +684,7 @@ let MeatTypes = function (aiIndex, animalType, jsonRecord, patch) {
     newform = xelib.AddArrayItem(MeatTypesArrayProperty, "Value\\Array of Object", "Object v2\\FormID", xelib.EditorID(alchRecords[xelib.EditorID(OriginalMeatTypeLink)]));
   } else {
     let meatRecord = jsonRecord.meat;
-    if (xelib.FileByName('Hunterborn_CACO-SE_Patch.esp') > 0) {
+    if (xelib.FileByName('Hunterborn_CACO-SE_Patch.esp') > 0 || cobjRecords.hasOwnProperty(`HB_CACO_RecipeJerkyHare`)) {
       meatRecord = vanillaToCaco[meatRecord] || meatRecord;
     }
     newform = xelib.AddArrayItem(MeatTypesArrayProperty, "Value\\Array of Object", "Object v2\\FormID", xelib.EditorID(alchRecords[meatRecord]));
