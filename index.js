@@ -105,7 +105,7 @@ let vanillaToCaco = {
   'FoodRabbit': 'FoodMeatRabbit',
   'FoodSalmon': 'FoodSeaSalmon',
   'FoodVenison': 'FoodMeatVenison',
-  'HumanFlesh': 'CACO_FoodMeatHumanoidFlesh',
+  'HumanFlesh': 'CACO_FoodMeatHumanoidFlesh'
 };
 
 let loadKnownDeathItemsAnimals = function () {
