@@ -1,6 +1,8 @@
 [{
     "type": "monster",
     "name": "Spider",
+    "properName": "Spider",
+    "sortName": "Spider",
     "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
     "carcassMessageBox": "",
     "carcassSize": "3",
@@ -30,6 +32,8 @@
   }, {
     "type": "monster",
     "name": "SpiderGiant",
+    "properName": "Giant Spider",
+    "sortName": "Spider, Giant",
     "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
     "carcassMessageBox": "",
     "carcassSize": "5",
@@ -59,6 +63,8 @@
   }, {
     "type": "monster",
     "name": "ChaurusSwampWarrior",
+    "properName": "Swamp Warrior Chaurus",
+    "sortName": "Chaurus, Swamp Warrior",
     "animalSwitch": "_DS_Hunterborn_IncludeMonsterChaurus",
     "carcassMessageBox": "",
     "carcassSize": "3",
@@ -91,6 +97,8 @@
   }, {
     "type": "monster",
     "name": "ChaurusWarrior",
+    "properName": "Warrior Chaurus",
+    "sortName": "Chaurus, Warrior",
     "animalSwitch": "_DS_Hunterborn_IncludeMonsterChaurus",
     "carcassMessageBox": "",
     "carcassSize": "3",
@@ -123,6 +131,8 @@
   }, {
     "type": "animal",
     "name": "Huskey",
+    "properName": "Husky",
+    "sortName": "Dog, Husky",
     "animalSwitch": "_DS_Hunterborn_IncludeDog",
     "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
     "carcassSize": "2",
@@ -134,11 +144,9 @@
     "mats": [{
         "_DS_CanineTooth": 1
       }, {
-        "_DS_CanineTooth": 1,
-        "_DS_LI_Mats__AnimalFat": 1
+        "_DS_CanineTooth": 1
       }, {
-        "_DS_CanineTooth": 2,
-        "_DS_LI_Mats__AnimalFat": 1
+        "_DS_CanineTooth": 2
       }, {
         "_DS_CanineTooth": 1,
         "_DS_AnimalBone_Small": 2
@@ -152,6 +160,8 @@
   }, {
     "type": "monster",
     "name": "TundraSpider",
+    "properName": "Tundra Spider",
+    "sortName": "Spider, Tundra",
     "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
     "carcassMessageBox": "",
     "carcassSize": "3",
@@ -181,6 +191,8 @@
   }, {
     "type": "monster",
     "name": "TundraSpiderGiant",
+    "properName": "Giant Tundra Spider",
+    "sortName": "Spider, Giant Tundra",
     "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
     "carcassMessageBox": "",
     "carcassSize": "5",
@@ -210,6 +222,8 @@
   }, {
     "type": "monster",
     "name": "SwampSpider",
+    "properName": "Swamp Spider",
+    "sortName": "Spider, Swamp",
     "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
     "carcassMessageBox": "",
     "carcassSize": "3",
@@ -239,6 +253,8 @@
   }, {
     "type": "monster",
     "name": "SwampSpiderGiant",
+    "properName": "Giant Swamp Spider",
+    "sortName": "Spider, Giant Swamp",
     "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
     "carcassMessageBox": "",
     "carcassSize": "5",
@@ -268,6 +284,8 @@
   }, {
     "type": "monster",
     "name": "IcebiteSpider",
+    "properName": "Icebite Spider",
+    "sortName": "Spider, Icebite",
     "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
     "carcassMessageBox": "",
     "carcassSize": "3",
@@ -297,6 +315,8 @@
   }, {
     "type": "monster",
     "name": "IcebiteSpiderGiant",
+    "properName": "Giant Icebite Spider",
+    "sortName": "Spider, Giant Icebite",
     "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
     "carcassMessageBox": "",
     "carcassSize": "3",
@@ -326,6 +346,8 @@
   }, {
     "type": "monster",
     "name": "Dreugh",
+    "properName": "Dreugh",
+    "sortName": "Dreugh",
     "animalSwitch": "",
     "carcassMessageBox": "",
     "carcassSize": "3",
@@ -359,6 +381,8 @@
   }, {
     "type": "monster",
     "name": "SnowbiteSpider",
+    "properName": "Snowbite Spider",
+    "sortName": "Spider, Snowbite",
     "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
     "carcassMessageBox": "",
     "carcassSize": "3",
@@ -388,6 +412,8 @@
   }, {
     "type": "monster",
     "name": "SnowbiteSpiderGiant",
+    "properName": "Giant Snowbite Spider",
+    "sortName": "Spider, Giant Snowbite",
     "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
     "carcassMessageBox": "",
     "carcassSize": "5",
@@ -417,6 +443,8 @@
   }, {
     "type": "animal",
     "name": "Rhino",
+    "properName": "Rhino",
+    "sortName": "Rhino",
     "animalSwitch": "",
     "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
     "carcassSize": "5",
@@ -430,15 +458,11 @@
       }, {
         "_00RhinoTusk": 1,
         "_DS_AnimalBone_Small": 2,
-        "_DS_AnimalBone_Large": 1,
-        "_DS_LI_Mats__AnimalBladder": 1,
-        "_DS_LI_Mats__AnimalFat": 5
+        "_DS_AnimalBone_Large": 1
       }, {
         "_00RhinoTusk": 1,
         "_DS_AnimalBone_Small": 3,
-        "_DS_AnimalBone_Large": 2,
-        "_DS_LI_Mats__AnimalBladder": 1,
-        "_DS_LI_Mats__AnimalFat": 5
+        "_DS_AnimalBone_Large": 2
       }, {
         "_DS_AnimalBone_Large": 3,
         "_DS_AnimalBone_Superb": 1
@@ -452,6 +476,8 @@
   }, {
     "type": "monster",
     "name": "DramanFelalnir",
+    "properName": "Draman Felalnir",
+    "sortName": "Draman Felalnir",
     "animalSwitch": "",
     "carcassMessageBox": "",
     "carcassSize": "5",
@@ -482,6 +508,8 @@
   }, {
     "type": "monster",
     "name": "DramanBrute",
+    "properName": "Draman Brute",
+    "sortName": "Draman Brute",
     "animalSwitch": "",
     "carcassMessageBox": "",
     "carcassSize": "5",
@@ -511,7 +539,9 @@
     "voice": "CrGargoyleVoice"
   }, {
     "type": "monster",
-    "name": "DramanHunter",
+    "name": "DramanNorokdir",
+    "properName": "Draman Norokdir",
+    "sortName": "Draman Norokdir",
     "animalSwitch": "",
     "carcassMessageBox": "",
     "carcassSize": "5",
@@ -542,6 +572,8 @@
   }, {
     "type": "monster",
     "name": "Wereskeever",
+    "properName": "Wereskeever",
+    "sortName": "Wereskeever",
     "animalSwitch": "_DS_Hunterborn_IncludeMonsterWerewolves",
     "carcassMessageBox": "",
     "carcassSize": "3",
@@ -556,13 +588,11 @@
       }, {
         "HumanFlesh": 1,
         "SkeeverTail": 1,
-        "_DS_AnimalBone_Small": 3,
-        "_DS_LI_Mats__AnimalFat": 5
+        "_DS_AnimalBone_Small": 3
       }, {
         "HumanFlesh": 1,
         "SkeeverTail": 2,
-        "_DS_AnimalBone_Small": 4,
-        "_DS_LI_Mats__AnimalFat": 5
+        "_DS_AnimalBone_Small": 4
       }, {
         "HumanFlesh": 1,
         "_DS_AnimalBone_Large": 1
@@ -576,6 +606,8 @@
   }, {
     "type": "monster",
     "name": "Daedroth",
+    "properName": "Daedroth",
+    "sortName": "Daedroth",
     "animalSwitch": "",
     "carcassMessageBox": "",
     "carcassSize": "5",
@@ -588,12 +620,10 @@
         "_DS_AnimalBone_Small": 2
       }, {
         "HumanFlesh": 1,
-        "_DS_AnimalBone_Small": 3,
-        "_DS_LI_Mats__AnimalFat": 5
+        "_DS_AnimalBone_Small": 3
       }, {
         "HumanFlesh": 1,
-        "_DS_AnimalBone_Small": 4,
-        "_DS_LI_Mats__AnimalFat": 5
+        "_DS_AnimalBone_Small": 4
       }, {
         "_DS_AnimalBone_Large": 1
       }
@@ -603,5 +633,33 @@
     "bloodType": "",
     "venom": "",
     "voice": "CrWerewolfVoice"
+  }, {
+    "type": "animal",
+    "name": "HellHound",
+    "properName": "Hell Hound",
+    "sortName": "Dog, Hell Hound",
+    "animalSwitch": "_DS_Hunterborn_IncludeDog",
+    "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
+    "carcassSize": "2",
+    "carcassWeight": "80",
+    "carcassValue": "30",
+    "peltCount": ["4", "2", "2", "2"],
+    "furPlateCount": ["1", "2", "4", "8"],
+    "meat": "FoodDogMeat",
+    "mats": [{
+        "_DS_CanineTooth": 1
+      }, {
+        "_DS_CanineTooth": 1,
+        "FireSalts": 1
+      }, {
+        "_DS_CanineTooth": 2,
+        "FireSalts": 2
+      }
+    ],
+    "negativeTreasure": ["FireSalts"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrWolfVoice"
   }
 ]

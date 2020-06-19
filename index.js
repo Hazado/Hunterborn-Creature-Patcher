@@ -1,12 +1,12 @@
 /* global ngapp, xelib, registerPatcher */
 let knownDeathItemsAnimals, knownDeathItemsMonsters;
-let forbiddenFactions = ['DaedraFaction', 'DLC1UndeadGuardianFaction', 'DLC1VampireFaction', 'DLC1VampireCompanionFaction', 'DLC2AshSpawnFaction', 'DragonPriestFaction', 'DraugrFaction', 'DremoraFaction', 'DwarvenAutomatonFaction', 'FalmerFaction', 'IceWraithFaction', 'SkeletonFaction', 'SoulCairnFaction', 'VampireFaction', 'WispFaction'];
+let forbiddenFactions = ['DLC1VampireFaction', 'DLC2AshSpawnFaction', 'DragonPriestFaction', 'DraugrFaction', 'DwarvenAutomatonFaction', 'FalmerFaction', 'IceWraithFaction', 'SoulCairnFaction', 'VampireFaction', 'WispFaction'];
 let allowedVoice = ['CrBearVoice', 'CrChickenVoice', 'CrCowVoice', 'CrDeerVoice', 'CrDogVoice', 'CrDogHusky', 'CrFoxVoice', 'CrGoatVoice', 'CrHareVoice', 'CrHorkerVoice', 'CrHorseVoice', 'CrMammothVoice', 'CrMudcrabVoice', 'CrSabreCatVoice', 'CrSkeeverVoice', 'CrSlaughterfishVoice', 'CrWolfVoice', 'DLC2CrBristlebackVoice', 'CrChaurusVoice', 'CrFrostbiteSpiderVoice', 'CrFrostbiteSpiderGiantVoice', 'CrSprigganVoice', 'CrTrollVoice', 'CrWerewolfVoice', 'CrDragonVoice', 'CrChaurusInsectVoice'];
-let animalTypes = ['Skip', 'Bear', 'Bear, Cave', 'Bear, Snow', 'Bristleback', 'Chaurus', 'Chaurus Hunter', 'Chicken', 'Cow', 'Deer', 'Dog', 'Dragon', 'Elk, Female', 'Elk, Male', 'Fox', 'Fox, Snow', 'Frost Troll', 'Goat', 'Hare', 'Horker', 'Horse', 'Mammoth', 'MudCrab, Small', 'MudCrab, Large', 'MudCrab, Giant', 'Sabrecat', 'Skeever', 'Slaughterfish', 'Spider, Frostbite', 'Spider, Giant Frostbite', 'Spriggan', 'Spriggan, Burnt', 'Troll', 'Vale Deer', 'Vale Sabrecat', 'Werebear', 'Werewolf', 'Wolf', 'Wolf, Ice'];
-let deathItemNameMatch = ['Werebear', 'Bear', 'Bristleback', 'Chaurus', 'CharusHunter', 'Chicken', 'Cow', 'Deer', 'Dog', 'Dragon', 'Elk', 'Fox', 'FrostbiteSpiderGiant', 'FrostbiteSpider', 'Goat', 'Hare', 'Horker', 'Horse', 'Mammoth', 'MudCrab', 'Sabrecat', 'Skeever', 'Slaughterfish', 'Spriggan', 'SprigganBurnt', 'Troll', 'Werewolf', 'Wolf'];
-let monsterTypes = ['Chaurus', 'FrostbiteSpiderGiant', 'FrostbiteSpider', 'Spriggan', 'SprigganBurnt', 'Troll', 'Werebear', 'Werewolf', 'Dragon'];
+let animalTypes = ['Skip', 'Bear', 'Bear, Cave', 'Bear, Snow', 'Bristleback', 'Chaurus', 'Chaurus, Hunter', 'Chicken', 'Cow', 'Deer', 'Deer, Vale', 'Dog', 'Dragon', 'Elk, Female', 'Elk, Male', 'Fox', 'Fox, Snow', 'Goat', 'Hare', 'Horker', 'Horse', 'Mammoth', 'MudCrab, Small', 'MudCrab, Large', 'MudCrab, Giant', 'Sabrecat', 'Sabrecat, Vale', 'Skeever', 'Slaughterfish', 'Spider, Frostbite', 'Spider, Giant Frostbite', 'Spriggan', 'Spriggan, Burnt', 'Troll', 'Troll, Frost', 'Werebear', 'Werewolf', 'Wolf', 'Wolf, Ice'];
+let deathItemNameMatch = ['Werebear', 'Bear', 'BearCave', 'BearSnow', 'Bristleback', 'Chaurus', 'CharusHunter', 'Chicken', 'Cow', 'DeerVale', 'Deer', 'Dog', 'Dragon', 'ElkFemale', 'ElkMale', 'FoxIce', 'Fox', 'FrostbiteSpiderGiant', 'FrostbiteSpider', 'Goat', 'Hare', 'Horker', 'Horse', 'Mammoth', 'MudCrab01', 'MudCrab02', 'MudCrab03', 'SabrecatSnow', 'SabrecatVale', 'Sabrecat', 'Skeever', 'Slaughterfish', 'Spriggan', 'SprigganBurnt', 'TrollFrost', 'Troll', 'Werewolf', 'WolfIce', 'Wolf'];
+let monsterTypes = ['Chaurus', 'CharusHunter', 'Dragon', 'FrostbiteSpider', 'FrostbiteSpiderGiant', 'Spriggan', 'SprigganBurnt', 'Troll', 'TrollFrost', 'Werebear', 'Werewolf'];
 let blacklistedRecords = ['HISLCBlackWolf', 'BSKEncRat'];
-let blacklistedDeathItems = ['DLC1DeathItemDragon06', 'DLC1DeathItemDragon07'];
+let blacklistedDeathItems = ['DLC1DeathItemDragon06', 'DLC1DeathItemDragon07', 'DeathItemDragonBonesOnly', 'DeathItemVampire', '_00DeathItemDramanBossSpecial'];
 let cobjRecords = {};
 let flstRecords = {};
 let lvliRecords = {};
@@ -22,7 +22,7 @@ let debugging = true;
 let fixedAnimalTypes = {
   'Bear, Cave': 'BearCave',
   'Bear, Snow': 'BearSnow',
-  'Chaurus Hunter': 'CharusHunter',
+  'Chaurus, Hunter': 'CharusHunter',
   'Elk, Female': 'ElkFemale',
   'Elk, Male': 'ElkMale',
   'Fox, Snow': 'FoxIce',
@@ -33,10 +33,10 @@ let fixedAnimalTypes = {
   'Spider, Frostbite': 'FrostbiteSpider',
   'Spider, Giant Frostbite': 'FrostbiteSpiderGiant',
   'Spriggan, Burnt': 'SprigganBurnt',
-  'Vale Deer': 'DeerVale',
-  'Vale Sabrecat': 'SabrecatVale',
+  'Deer, Vale': 'DeerVale',
+  'Sabrecat, Vale': 'SabrecatVale',
   'Wolf, Ice': 'WolfIce',
-  'Frost Troll': 'TrollFrost'
+  'Troll, Frost': 'TrollFrost'
 };
 
 let animalTypeIndex = {
@@ -71,10 +71,14 @@ let animalTypeIndex = {
   'Chaurus': 0,
   'FrostbiteSpider': 1,
   'FrostbiteSpiderGiant': 2,
+  'Spriggan': 3,
   'Troll': 4,
   'TrollFrost': 5,
   'Werewolf': 6,
-  'Dragon': 7
+  'Dragon': 7,
+  'CharusHunter': 8,
+  'Werebear': 9,
+  'SprigganBurnt': 10
 };
 
 let vanillaToCaco = {
@@ -200,9 +204,18 @@ let buildDeathItem = function (deathItems, rec) {
   if (!deathItems.hasOwnProperty(deathItem)) {
     for (let i = 0; i < deathItemNameMatch.length; i++) {
       let re = new RegExp(deathItemNameMatch[i], 'i');
-      if (deathItem.match(re) != null) {
+      if (deathItem.match(/SpiderAlbino/i) != null) {
         deathItems[deathItem] = {
-          animalType: deathItemNameMatch[i],
+          animalType: 'Spider, Albino',
+          npcs: []
+        };
+        break
+      } else if (deathItem.match(re) != null) {
+        let nameMatch = Object.keys(fixedAnimalTypes).find(key => fixedAnimalTypes[key] === deathItemNameMatch[i]);
+        if (nameMatch == undefined)
+          nameMatch = deathItemNameMatch[i];
+        deathItems[deathItem] = {
+          animalType: nameMatch,
           npcs: []
         };
         break;
@@ -224,10 +237,9 @@ let buildDeathItem = function (deathItems, rec) {
           npcs: []
         };
     }
-    console.log(deathItems[deathItem].animalType);
     if (deathItem.match(/Spider/i) != null && deathItems[deathItem].animalType == 'Skip') {
       deathItems[deathItem] = {
-        animalType: 'Frostbite Spider',
+        animalType: 'Spider, Frostbite',
         npcs: []
       };
     }
@@ -305,7 +317,13 @@ let CreateCarcass = function (animalType, animalRecord, npc, jsonRecord, patch) 
   } else if (!monsterTypes.includes(animalType)) {
     Carcass = xelib.CopyElement(miscRecords['_DS_CarcassFresh_Cow'], patch, true);
     xelib.SetValue(Carcass, 'EDID', xelib.EditorID(Carcass).replace("Cow", animalRecord));
-    xelib.SetValue(Carcass, 'FULL', xelib.FullName(Carcass).replace("Cow", xelib.FullName(npc)));
+    let fullName = "";
+    if (jsonRecord.properName != "") {
+      fullName = jsonRecord.properName;
+    } else {
+      fullName = xelib.FullName(npc);
+    }
+    xelib.SetValue(Carcass, 'FULL', xelib.FullName(Carcass).replace("Cow", fullName));
     xelib.SetValue(Carcass, 'Model\\MODL', "Clutter\\Containers\\MiscSackLarge.nif");
     xelib.SetValue(Carcass, 'DATA\\Value', jsonRecord.carcassValue);
     xelib.SetValue(Carcass, 'DATA\\Weight', jsonRecord.carcassWeight);
@@ -864,14 +882,14 @@ let addRecords = function (npc, animalType, patch) {
   }
 };
 
-let spliceTypes = function (name, type) {
+let spliceTypes = function (name, type, sortName) {
   let i = 1;
-  if (animalTypes.find(element => element == name) == undefined) {
+  if (animalTypes.find(element => element == sortName) == undefined) {
     let arrayTest = animalTypes[i];
-    while (arrayTest && arrayTest < name) {
+    while (arrayTest && arrayTest < sortName) {
       arrayTest = animalTypes[++i];
     }
-    animalTypes.splice(i, 0, name);
+    animalTypes.splice(i, 0, sortName);
     if (type == "monster") {
       monsterTypes.push(name);
     }
@@ -886,7 +904,7 @@ let loadJsonData = function (patchJson, i) {
     if (!allowedVoice.includes(jsonData[i][j].voice)) {
       allowedVoice.push(jsonData[i][j].voice);
     }
-    if (spliceTypes(jsonData[i][j].name, jsonData[i][j].type)) {
+    if (spliceTypes(jsonData[i][j].name, jsonData[i][j].type, jsonData[i][j].sortName)) {
       if (debugging)
         jsonData[i].splice(j, 1);
       j--;
@@ -894,6 +912,7 @@ let loadJsonData = function (patchJson, i) {
       if (debugging)
         console.log("Adding creature: " + jsonData[i][j].name);
       deathItemNameMatch.unshift(jsonData[i][j].name);
+      fixedAnimalTypes[jsonData[i][j].sortName] = jsonData[i][j].name;
     }
   }
 };
@@ -905,6 +924,10 @@ let CheckPatches = function () {
     jsonData = [];
     let jsonFiles = fh.getFiles(patcherPath, {
       matching: ['*.json', '!module.json']
+    });
+    jsonFiles.sort(function (a, b) {
+      if (a.match(/Skyrim\.json/) != null)
+        return -1;
     });
     jsonFiles.forEach(file => {
       let tempfile = file.replace(patcherPath + "\\", '').replace('.json', '');

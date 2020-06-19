@@ -1,6 +1,8 @@
 [{
     "type": "animal",
     "name": "Cheetah",
+	"properName": "Ancestral Cheetah",
+	"sortName": "Cheetah, Ancestral",
     "animalSwitch": "",
     "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
     "carcassSize": "2",
@@ -13,12 +15,10 @@
         "manny_GF_AncestralCheetahTooth": 1
       }, {
         "manny_GF_AncestralCheetahTooth": 1,
-        "manny_GF_AncestralCheetahEyeball": 1,
-        "_DS_LI_Mats__AnimalFat": 5
+        "manny_GF_AncestralCheetahEyeball": 1
       }, {
         "manny_GF_AncestralCheetahTooth": 2,
-        "manny_GF_AncestralCheetahEyeball": 2,
-        "_DS_LI_Mats__AnimalFat": 5
+        "manny_GF_AncestralCheetahEyeball": 2
       }, {
         "manny_GF_AncestralCheetahTooth": 1,
         "_DS_AnimalBone_Large": 3,
@@ -37,6 +37,8 @@
   }, {
     "type": "monster",
     "name": "Duneripper",
+	"properName": "Duneripper",
+	"sortName": "Chaurus, Duneripper",
     "animalSwitch": "_DS_Hunterborn_IncludeMonsterChaurus",
     "carcassMessageBox": "",
     "carcassSize": "3",

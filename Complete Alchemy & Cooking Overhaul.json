@@ -1,6 +1,8 @@
 [{
     "type": "animal",
     "name": "Pig",
+	"properName": "Pig",
+	"sortName": "Pig",
     "animalSwitch": "",
     "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
     "carcassSize": "2",
@@ -12,13 +14,9 @@
     "mats": [{
         "_DS_AnimalBone_Small": 1
       }, {
-        "_DS_AnimalBone_Small": 2,
-        "_DS_LI_Mats__AnimalBladder": 1,
-        "_DS_LI_Mats__AnimalFat": 5
+        "_DS_AnimalBone_Small": 2
       }, {
-        "_DS_AnimalBone_Small": 3,
-        "_DS_LI_Mats__AnimalBladder": 1,
-        "_DS_LI_Mats__AnimalFat": 5
+        "_DS_AnimalBone_Small": 3
       }, {
         "_DS_AnimalBone_Large": 1
       }
@@ -31,6 +29,8 @@
   }, {
     "type": "animal",
     "name": "Piglet",
+	"properName": "Piglet",
+	"sortName": "Piglet",
     "animalSwitch": "",
     "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
     "carcassSize": "1",
@@ -42,13 +42,9 @@
     "mats": [{
         "_DS_AnimalBone_Small": 1
       }, {
-        "_DS_AnimalBone_Small": 2,
-        "_DS_LI_Mats__AnimalBladder": 1,
-        "_DS_LI_Mats__AnimalFat": 2
+        "_DS_AnimalBone_Small": 2
       }, {
-        "_DS_AnimalBone_Small": 3,
-        "_DS_LI_Mats__AnimalBladder": 1,
-        "_DS_LI_Mats__AnimalFat": 2
+        "_DS_AnimalBone_Small": 3
       }, {
         "_DS_AnimalBone_Small": 5
       }
@@ -61,6 +57,8 @@
   }, {
     "type": "animal",
     "name": "Calf",
+	"properName": "Calf",
+	"sortName": "Cow, Calf",
     "animalSwitch": "",
     "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
     "carcassSize": "1",
@@ -75,15 +73,11 @@
 
       }, {
         "CreaturePerkIngrCowOxgall_KRY": 1,
-        "_DS_AnimalBone_Small": 3,
-        "_DS_LI_Mats__AnimalBladder": 1,
-        "_DS_LI_Mats__AnimalFat": 4
+        "_DS_AnimalBone_Small": 3
       }, {
         "CreaturePerkIngrCowOxgall_KRY": 1,
         "_DS_AnimalBone_Small": 6,
-        "_DS_Food_OxHeart": 1,
-        "_DS_LI_Mats__AnimalBladder": 1,
-        "_DS_LI_Mats__AnimalFat": 4
+        "_DS_Food_OxHeart": 1
       }, {
         "_DS_AnimalBone_Large": 1
       }
@@ -96,6 +90,8 @@
   }, {
     "type": "animal",
     "name": "Sheep",
+	"properName": "Sheep",
+	"sortName": "Sheep",
     "animalSwitch": "",
     "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
     "carcassSize": "2",
@@ -107,13 +103,9 @@
     "mats": [{
         "_DS_AnimalBone_Small": 1
       }, {
-        "_DS_AnimalBone_Small": 2,
-        "_DS_LI_Mats__AnimalBladder": 1,
-        "_DS_LI_Mats__AnimalFat": 5
+        "_DS_AnimalBone_Small": 2
       }, {
-        "_DS_AnimalBone_Small": 3,
-        "_DS_LI_Mats__AnimalBladder": 1,
-        "_DS_LI_Mats__AnimalFat": 5
+        "_DS_AnimalBone_Small": 3
       }, {
         "_DS_AnimalBone_Large": 1
       }
@@ -126,6 +118,8 @@
   }, {
     "type": "animal",
     "name": "Ram",
+	"properName": "Ram",
+	"sortName": "Sheep, Ram",
     "animalSwitch": "",
     "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
     "carcassSize": "2",
@@ -138,14 +132,10 @@
         "_DS_AnimalBone_Small": 1
       }, {
         "_DS_AnimalBone_Small": 2,
-        "BYOHLItemHornGoat50": 1,
-        "_DS_LI_Mats__AnimalBladder": 1,
-        "_DS_LI_Mats__AnimalFat": 5
+        "BYOHLItemHornGoat50": 1
       }, {
         "_DS_AnimalBone_Small": 3,
-        "BYOHLItemHornGoat50": 2,
-        "_DS_LI_Mats__AnimalBladder": 1,
-        "_DS_LI_Mats__AnimalFat": 5
+        "BYOHLItemHornGoat50": 2
       }, {
         "_DS_AnimalBone_Large": 1
       }
@@ -158,6 +148,8 @@
   }, {
     "type": "animal",
     "name": "Lamb",
+	"properName": "Lamb",
+	"sortName": "Sheep, Lamb",
     "animalSwitch": "",
     "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
     "carcassSize": "1",
@@ -169,13 +161,9 @@
     "mats": [{
         "_DS_AnimalBone_Small": 1
       }, {
-        "_DS_AnimalBone_Small": 2,
-        "_DS_LI_Mats__AnimalBladder": 1,
-        "_DS_LI_Mats__AnimalFat": 5
+        "_DS_AnimalBone_Small": 2
       }, {
-        "_DS_AnimalBone_Small": 3,
-        "_DS_LI_Mats__AnimalBladder": 1,
-        "_DS_LI_Mats__AnimalFat": 5
+        "_DS_AnimalBone_Small": 3
       }, {
         "_DS_AnimalBone_Large": 1
       }
@@ -185,5 +173,34 @@
     "bloodType": "",
     "venom": "",
     "voice": "CrGoatVoice"
+  }, {
+    "type": "monster",
+    "name": "DeathHound",
+    "properName": "Death Hound",
+    "sortName": "Dog, Death Hound",
+    "animalSwitch": "_DS_Hunterborn_IncludeDog",
+    "carcassMessageBox": "",
+    "carcassSize": "2",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["4", "2", "2", "2"],
+    "furPlateCount": ["1", "2", "4", "8"],
+    "meat": "CACO_DecayedMeat",
+    "mats": [{
+        "_DS_CanineTooth": 1
+      }, {
+        "_DS_CanineTooth": 1
+      }, {
+        "_DS_CanineTooth": 2
+      }, {
+        "_DS_CanineTooth": 1,
+        "_DS_AnimalBone_Small": 2
+      }
+    ],
+    "negativeTreasure": ["CACO_DecayedMeat"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrDogDeathHound"
   }
 ]

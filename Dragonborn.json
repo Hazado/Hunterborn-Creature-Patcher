@@ -1,6 +1,8 @@
 [{
     "type": "monster",
     "name": "Werebear",
+	"properName": "Werebear",
+	"sortName": "Werebear",
     "animalSwitch": "_DS_Hunterborn_IncludeMonsterWerewolves",
     "carcassMessageBox": "",
     "carcassSize": "5",
@@ -16,15 +18,13 @@
         "HumanFlesh": 1,
         "BearClaws": 1,
         "_DS_BearTooth": 1,
-        "_DS_BearEyeball": 1,
-        "_DS_LI_Mats__AnimalFat": 10
+        "_DS_BearEyeball": 1
       }, {
         "HumanFlesh": 1,
         "BearClaws": 2,
         "_DS_BearTooth": 2,
         "_DS_BearEyeball": 2,
-        "_DS_BearHeart": 1,
-        "_DS_LI_Mats__AnimalFat": 10
+        "_DS_BearHeart": 1
       }, {
         "HumanFlesh": 1,
         "BearClaws": 1,
@@ -46,6 +46,8 @@
   }, {
     "type": "monster",
     "name": "SpiderAlbino",
+	"properName": "Albino Spider",
+	"sortName": "Spider, Albino",
     "animalSwitch": "_DS_Hunterborn_IncludeMonsterSpiders",
     "carcassMessageBox": "",
     "carcassSize": "3",
@@ -78,6 +80,8 @@
   }, {
     "type": "animal",
     "name": "AshHopper",
+	"properName": "Ash Hopper",
+	"sortName": "Ash Hopper",
     "animalSwitch": "",
     "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
     "carcassSize": "1",
@@ -111,6 +115,8 @@
   }, {
     "type": "animal",
     "name": "Netch",
+	"properName": "Netch",
+	"sortName": "Netch",
     "animalSwitch": "",
     "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
     "carcassSize": "1",
@@ -139,6 +145,8 @@
   }, {
     "type": "animal",
     "name": "NetchCalf",
+	"properName": "Netch Calf",
+	"sortName": "Netch, Calf",
     "animalSwitch": "",
     "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
     "carcassSize": "1",

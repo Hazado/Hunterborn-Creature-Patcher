@@ -1,6 +1,8 @@
 [{
     "type": "monster",
     "name": "DragonLava",
+	"properName": "Lava Dragon",
+	"sortName": "Dragon, Lava",
     "animalSwitch": "_DS_Hunterborn_IncludeMonsterDragons",
     "carcassMessageBox": "",
     "carcassSize": "7",
@@ -24,7 +26,7 @@
     ],
     "negativeTreasure": ["DragonBone"],
     "sharedDeathItems": "",
-    "bloodType": "",
+    "bloodType": "_DS_Blood_Dragon",
     "venom": "",
     "voice": "CrDragonVoice"
   }

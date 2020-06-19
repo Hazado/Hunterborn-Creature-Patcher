@@ -1,0 +1,84 @@
+[{
+    "type": "monster",
+    "name": "Dremora",
+    "properName": "",
+    "sortName": "Dremora",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
+    "carcassSize": "3",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["4", "2", "2", "2"],
+    "furPlateCount": ["2", "4", "8", "16"],
+    "meat": "",
+    "mats": [{
+	  }, {
+        "DaedraHeart": 1
+      }, {
+        "DaedraHeart": 1
+      }, {
+	  }
+    ],
+    "negativeTreasure": ["DaedraHeart"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrDremoraVoice"
+  }, {
+    "type": "monster",
+    "name": "Giant",
+    "properName": "",
+    "sortName": "Giant",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
+    "carcassSize": "5",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["4", "2", "2", "2"],
+    "furPlateCount": ["2", "4", "8", "16"],
+    "meat": "",
+    "mats": [{
+	  }, {
+        "GiantToes": 1
+      }, {
+        "GiantToes": 2
+      }, {
+	  }
+    ],
+    "negativeTreasure": ["GiantToes"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrGiantVoice"
+  }, {
+    "type": "monster",
+    "name": "Hagraven",
+    "properName": "",
+    "sortName": "Hagraven",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
+    "carcassSize": "3",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["4", "2", "2", "2"],
+    "furPlateCount": ["2", "4", "8", "16"],
+    "meat": "",
+    "mats": [{
+        "HagravenFeathers": 1
+      }, {
+        "HagravenClaw": 1,
+        "HagravenFeathers": 2
+      }, {
+        "HagravenClaw": 2,
+        "HagravenFeathers": 3
+      }, {
+        "HagravenFeathers": 1
+      }
+    ],
+    "negativeTreasure": ["HagravenClaw", "HagravenFeathers"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrHagravenVoice"
+  }
+]
