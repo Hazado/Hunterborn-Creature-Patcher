@@ -177,21 +177,24 @@
     "type": "monster",
     "name": "DeathHound",
     "properName": "Death Hound",
-    "sortName": "Dog, Death Hound",
-    "animalSwitch": "_DS_Hunterborn_IncludeDog",
+    "sortName": "Death Hound",
+    "animalSwitch": "",
     "carcassMessageBox": "",
     "carcassSize": "2",
     "carcassWeight": "",
     "carcassValue": "",
     "peltCount": ["4", "2", "2", "2"],
     "furPlateCount": ["1", "2", "4", "8"],
-    "meat": "CACO_DecayedMeat",
+    "meat": "",
     "mats": [{
-        "_DS_CanineTooth": 1
+        "_DS_CanineTooth": 1,
+		"CACO_DecayedMeat": 1
       }, {
-        "_DS_CanineTooth": 1
+        "_DS_CanineTooth": 1,
+		"CACO_DecayedMeat": 2
       }, {
-        "_DS_CanineTooth": 2
+        "_DS_CanineTooth": 2,
+		"CACO_DecayedMeat": 2
       }, {
         "_DS_CanineTooth": 1,
         "_DS_AnimalBone_Small": 2
@@ -202,5 +205,38 @@
     "bloodType": "",
     "venom": "",
     "voice": "CrDogDeathHound"
+  }, {
+    "type": "monster",
+    "name": "MountedRiekling",
+    "properName": "",
+    "sortName": "Riekling, Mounted",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
+    "carcassSize": "3",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["2", "4", "2", "2"],
+    "furPlateCount": ["1", "2", "4", "8"],
+    "meat": "DLC2FoodBoarMeat",
+    "mats": [{
+        "DLC2BoarTusk": 1
+      }, {
+        "DLC2BoarTusk": 1,
+		"_DS_BristlebackEyeball": 1
+      }, {
+        "DLC2BoarTusk": 2,
+		"_DS_BristlebackHeart": 1,
+		"_DS_BristlebackEyeball": 2
+      }, {
+        "CreatureIngrBoarTusk_KRY": 1,
+        "_DS_AnimalBone_Large": 2,
+		"_DS_AnimalBone_Superb": 1
+      }
+    ],
+    "negativeTreasure": ["DLC2FoodMeatBoar", "DLC2BoarTusk", "_DS_Pelt_Bristleback_01"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "DLC2RieklingVoice"
   }
 ]

@@ -26,6 +26,32 @@
     "voice": "CrDremoraVoice"
   }, {
     "type": "monster",
+    "name": "Falmer",
+    "properName": "",
+    "sortName": "Falmer",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
+    "carcassSize": "2",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["4", "2", "2", "2"],
+    "furPlateCount": ["2", "4", "8", "16"],
+    "meat": "",
+    "mats": [{
+	  }, {
+        "FalmerEar": 1
+      }, {
+        "FalmerEar": 2
+      }, {
+	  }
+    ],
+    "negativeTreasure": ["FalmerEar"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrFalmerVoice"
+  }, {
+    "type": "monster",
     "name": "Giant",
     "properName": "",
     "sortName": "Giant",

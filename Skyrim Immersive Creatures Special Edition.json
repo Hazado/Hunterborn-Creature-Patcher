@@ -634,15 +634,15 @@
     "venom": "",
     "voice": "CrWerewolfVoice"
   }, {
-    "type": "animal",
+    "type": "monster",
     "name": "HellHound",
     "properName": "Hell Hound",
-    "sortName": "Dog, Hell Hound",
-    "animalSwitch": "_DS_Hunterborn_IncludeDog",
-    "carcassMessageBox": "_DS_MsgBox_FreshCarcass",
+    "sortName": "Hell Hound",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
     "carcassSize": "2",
-    "carcassWeight": "80",
-    "carcassValue": "30",
+    "carcassWeight": "",
+    "carcassValue": "",
     "peltCount": ["4", "2", "2", "2"],
     "furPlateCount": ["1", "2", "4", "8"],
     "meat": "FoodDogMeat",
@@ -661,5 +661,252 @@
     "bloodType": "",
     "venom": "",
     "voice": "CrWolfVoice"
+  }, {
+    "type": "monster",
+    "name": "CaveGiant",
+    "properName": "",
+    "sortName": "Giant, Cave",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
+    "carcassSize": "5",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["4", "2", "2", "2"],
+    "furPlateCount": ["2", "4", "8", "16"],
+    "meat": "",
+    "mats": [{
+	  }, {
+        "GiantToes": 1,
+		"_00GiantTusk": 1
+      }, {
+        "GiantToes": 2, 
+		"_00GiantTusk": 2
+      }, {
+	  }
+    ],
+    "negativeTreasure": ["GiantToes", "_00GiantTusk"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrGiantVoice"
+  }, {
+    "type": "monster",
+    "name": "FrostGiant",
+    "properName": "",
+    "sortName": "Giant, Frost",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
+    "carcassSize": "5",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["4", "2", "2", "2"],
+    "furPlateCount": ["2", "4", "8", "16"],
+    "meat": "",
+    "mats": [{
+	  }, {
+        "GiantToes": 1,
+		"_00GiantTusk": 1
+      }, {
+        "GiantToes": 2, 
+		"_00GiantTusk": 2
+      }, {
+	  }
+    ],
+    "negativeTreasure": ["GiantToes", "_00GiantTusk"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrGiantVoice"
+  }, {
+    "type": "monster",
+    "name": "Ogre",
+    "properName": "",
+    "sortName": "Ogre",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
+    "carcassSize": "5",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["4", "2", "2", "2"],
+    "furPlateCount": ["2", "4", "8", "16"],
+    "meat": "",
+    "mats": [{
+	  }, {
+        "_00OgreTeeth": 1
+      }, {
+        "_00OgreTeeth": 2
+      }, {
+		"_00OgreTeeth": 1
+	  }
+    ],
+    "negativeTreasure": ["_00OgreTeeth"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrGiantVoice"
+  }, {
+    "type": "monster",
+    "name": "RieklingMelee",
+    "properName": "",
+    "sortName": "Riekling, Melee",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
+    "carcassSize": "2",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["4", "2", "2", "2"],
+    "furPlateCount": ["2", "4", "8", "16"],
+    "meat": "",
+    "mats": [{
+	  }, {
+        "_00RieklingEar": 1
+      }, {
+        "_00RieklingEar": 2,
+		"_00RieklingHeart": 1
+      }, {
+		
+	  }
+    ],
+    "negativeTreasure": ["_00RieklingEar", "_00RieklingHeart"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "DLC2RieklingVoice"
+  }, {
+    "type": "monster",
+    "name": "RieklingMissile",
+    "properName": "",
+    "sortName": "Riekling, Missile",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
+    "carcassSize": "2",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["4", "2", "2", "2"],
+    "furPlateCount": ["2", "4", "8", "16"],
+    "meat": "",
+    "mats": [{
+	  }, {
+        "_00RieklingEar": 1
+      }, {
+        "_00RieklingEar": 2,
+		"_00RieklingHeart": 1
+      }, {
+		
+	  }
+    ],
+    "negativeTreasure": ["_00RieklingEar", "_00RieklingHeart"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "DLC2RieklingVoice"
+  }, {
+    "type": "monster",
+    "name": "DarkSeducer",
+    "properName": "",
+    "sortName": "Dark Seducer",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
+    "carcassSize": "2",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["4", "2", "2", "2"],
+    "furPlateCount": ["2", "4", "8", "16"],
+    "meat": "",
+    "mats": [{
+	  }, {
+        "DaedraHeart": 1
+      }, {
+		"DaedraHeart": 1
+      }, {
+		
+	  }
+    ],
+    "negativeTreasure": ["DaedraHeart"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "DLC1FemaleVampire"
+  }, {
+    "type": "monster",
+    "name": "GoldenSaint",
+    "properName": "",
+    "sortName": "Golden Saint",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
+    "carcassSize": "2",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["4", "2", "2", "2"],
+    "furPlateCount": ["2", "4", "8", "16"],
+    "meat": "",
+    "mats": [{
+	  }, {
+        "DaedraHeart": 1
+      }, {
+		"DaedraHeart": 1
+      }, {
+		
+	  }
+    ],
+    "negativeTreasure": ["DaedraHeart"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "DLC1FemaleVampire"
+  }, {
+    "type": "monster",
+    "name": "WingedTwilight",
+    "properName": "",
+    "sortName": "Winged Twilight",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
+    "carcassSize": "2",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["4", "2", "2", "2"],
+    "furPlateCount": ["2", "4", "8", "16"],
+    "meat": "",
+    "mats": [{
+	  }, {
+        "DaedraHeart": 1
+      }, {
+		"DaedraHeart": 1
+      }, {
+		
+	  }
+    ],
+    "negativeTreasure": ["DaedraHeart"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrHagravenVoice"
+  }, {
+    "type": "monster",
+    "name": "Gehenoth",
+    "properName": "",
+    "sortName": "Gehenoth",
+    "animalSwitch": "",
+    "carcassMessageBox": "",
+    "carcassSize": "5",
+    "carcassWeight": "",
+    "carcassValue": "",
+    "peltCount": ["4", "2", "2", "2"],
+    "furPlateCount": ["2", "4", "8", "16"],
+    "meat": "",
+    "mats": [{
+	  }, {
+        "_00GehenothClaw": 1
+      }, {
+		"_00GehenothClaw": 2
+      }, {
+		
+	  }
+    ],
+    "negativeTreasure": ["_00GehenothClaw"],
+    "sharedDeathItems": "",
+    "bloodType": "",
+    "venom": "",
+    "voice": "CrTrollVoice"
   }
 ]

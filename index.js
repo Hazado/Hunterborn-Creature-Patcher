@@ -1,12 +1,12 @@
 /* global ngapp, xelib, registerPatcher */
 let knownDeathItemsAnimals, knownDeathItemsMonsters;
-let forbiddenFactions = ['DLC1VampireFaction', 'DLC2AshSpawnFaction', 'DragonPriestFaction', 'DraugrFaction', 'DwarvenAutomatonFaction', 'FalmerFaction', 'IceWraithFaction', 'SoulCairnFaction', 'VampireFaction', 'WispFaction'];
+let forbiddenFactions = ['DLC1VampireFaction', 'DLC2AshSpawnFaction', 'DragonPriestFaction', 'DraugrFaction', 'DwarvenAutomatonFaction', 'IceWraithFaction', 'SoulCairnFaction', 'VampireFaction', 'WispFaction'];
 let allowedVoice = ['CrBearVoice', 'CrChickenVoice', 'CrCowVoice', 'CrDeerVoice', 'CrDogVoice', 'CrDogHusky', 'CrFoxVoice', 'CrGoatVoice', 'CrHareVoice', 'CrHorkerVoice', 'CrHorseVoice', 'CrMammothVoice', 'CrMudcrabVoice', 'CrSabreCatVoice', 'CrSkeeverVoice', 'CrSlaughterfishVoice', 'CrWolfVoice', 'DLC2CrBristlebackVoice', 'CrChaurusVoice', 'CrFrostbiteSpiderVoice', 'CrFrostbiteSpiderGiantVoice', 'CrSprigganVoice', 'CrTrollVoice', 'CrWerewolfVoice', 'CrDragonVoice', 'CrChaurusInsectVoice'];
 let animalTypes = ['Skip', 'Bear', 'Bear, Cave', 'Bear, Snow', 'Bristleback', 'Chaurus', 'Chaurus, Hunter', 'Chicken', 'Cow', 'Deer', 'Deer, Vale', 'Dog', 'Dragon', 'Elk, Female', 'Elk, Male', 'Fox', 'Fox, Snow', 'Goat', 'Hare', 'Horker', 'Horse', 'Mammoth', 'MudCrab, Small', 'MudCrab, Large', 'MudCrab, Giant', 'Sabrecat', 'Sabrecat, Vale', 'Skeever', 'Slaughterfish', 'Spider, Frostbite', 'Spider, Giant Frostbite', 'Spriggan', 'Spriggan, Burnt', 'Troll', 'Troll, Frost', 'Werebear', 'Werewolf', 'Wolf', 'Wolf, Ice'];
 let deathItemNameMatch = ['Werebear', 'Bear', 'BearCave', 'BearSnow', 'Bristleback', 'Chaurus', 'CharusHunter', 'Chicken', 'Cow', 'DeerVale', 'Deer', 'Dog', 'Dragon', 'ElkFemale', 'ElkMale', 'FoxIce', 'Fox', 'FrostbiteSpiderGiant', 'FrostbiteSpider', 'Goat', 'Hare', 'Horker', 'Horse', 'Mammoth', 'MudCrab01', 'MudCrab02', 'MudCrab03', 'SabrecatSnow', 'SabrecatVale', 'Sabrecat', 'Skeever', 'Slaughterfish', 'Spriggan', 'SprigganBurnt', 'TrollFrost', 'Troll', 'Werewolf', 'WolfIce', 'Wolf'];
 let monsterTypes = ['Chaurus', 'CharusHunter', 'Dragon', 'FrostbiteSpider', 'FrostbiteSpiderGiant', 'Spriggan', 'SprigganBurnt', 'Troll', 'TrollFrost', 'Werebear', 'Werewolf'];
 let blacklistedRecords = ['HISLCBlackWolf', 'BSKEncRat'];
-let blacklistedDeathItems = ['DLC1DeathItemDragon06', 'DLC1DeathItemDragon07', 'DeathItemDragonBonesOnly', 'DeathItemVampire', '_00DeathItemDramanBossSpecial'];
+let blacklistedDeathItems = ['DLC1DeathItemDragon06', 'DLC1DeathItemDragon07', 'DeathItemDragonBonesOnly', 'DeathItemVampire', '_00DeathItemDramanBossSpecial', 'DeathItemForsworn'];
 let cobjRecords = {};
 let flstRecords = {};
 let lvliRecords = {};
@@ -96,19 +96,22 @@ let vanillaToCaco = {
   '_DS_Food_Raw_Slaughterfish': 'CACO_FoodSeaSlaughterfishRaw',
   '_DS_Food_Raw_Spider': '_DS_Food_Raw_Spider',
   '_DS_Food_Raw_Troll': 'CACO_FoodMeatTroll',
-  '_DS_Food_Raw_Wolf': 'FoodMeatDog',
-  'FoodBeef': 'FoodMeatBeef',
-  'FoodChicken': 'FoodMeatChicken',
-  'FoodClamMeat': 'FoodSeaClam',
-  'FoodDogMeat': 'FoodMeatDog',
-  'FoodGoatMeat': 'FoodMeatGoat',
-  'FoodHorkerMeat': 'FoodMeatHorker',
-  'FoodHorseMeat': 'FoodMeatHorse',
-  'FoodMammothMeat': 'FoodMeatMammoth',
-  'FoodPheasant': 'FoodMeatPheasant',
-  'FoodRabbit': 'FoodMeatRabbit',
-  'FoodSalmon': 'FoodSeaSalmon',
-  'FoodVenison': 'FoodMeatVenison',
+  '_DS_Food_Raw_Wolf': 'FoodDogMeat',
+  'FoodBeef': 'FoodBeef',
+  'FoodChicken': 'FoodChicken',
+  'FoodClamMeat': 'FoodClamMeat',
+  'FoodDogMeat': 'FoodDogMeat',
+  'FoodGoatMeat': 'FoodGoatMeat',
+  'FoodHorkerMeat': 'FoodHorkerMeat',
+  'FoodHorseMeat': 'FoodHorseMeat',
+  'FoodMammothMeat': 'FoodMammothMeat',
+  'FoodPheasant': 'FoodPheasant',
+  'FoodRabbit': 'FoodRabbit',
+  'FoodSalmon': 'FoodSalmon',
+  'FoodVenison': 'FoodVenison',
+  'DLC2FoodAshHopperMeat': 'DLC2FoodAshHopperMeat',
+  'DLC2FoodAshHopperLeg': 'DLC2FoodAshHopperLeg',
+  'DLC2FoodBoarMeat': 'DLC2FoodBoarMeat',
   'HumanFlesh': 'CACO_FoodMeatHumanoidFlesh'
 };
 
