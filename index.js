@@ -13,10 +13,10 @@ let lvliRecords = {};
 let miscRecords = {};
 let alchRecords = {};
 let qustRecords = {};
-let npcRecords = {};
 let Pelts = {};
 let DefaultPelt = {};
 let CheckPatchesRunOnce = false;
+let progressNumber = 0;
 
 let debugging = true;
 
@@ -828,79 +828,79 @@ let addRecords = function (npc, animalType, patch, helpers) {
       console.log(npc + " " + animalType + " " + animalRecord);
     helpers.logMessage(`Creating Hunterborn records for ${animalRecord}`);
     CreateToken(animalType, animalRecord, patch);
-    helpers.addProgress(1);
+    helpers.addProgress(progressNumber);
     if (debugging)
       console.log(1);
     let Carcass = CreateCarcass(animalType, animalRecord, npc, jsonRecord, patch);
-    helpers.addProgress(1);
+    helpers.addProgress(progressNumber);
     if (debugging)
       console.log(2);
     CreateMats(animalType, animalRecord, jsonRecord, patch);
-    helpers.addProgress(1);
+    helpers.addProgress(progressNumber);
     if (debugging)
       console.log(3);
     CreatePelts(Pelts, Carcass, animalType, animalRecord, aiIndex, npc, patch);
-    helpers.addProgress(1);
+    helpers.addProgress(progressNumber);
     if (debugging)
       console.log(4);
     CreateNewDeathItem(animalType, animalRecord, npc, jsonRecord, patch);
-    helpers.addProgress(1);
+    helpers.addProgress(progressNumber);
     if (debugging)
       console.log(5);
     CreatePerfectMats(animalType, animalRecord, patch);
-    helpers.addProgress(1);
+    helpers.addProgress(progressNumber);
     if (debugging)
       console.log(6);
     CreateRecipes(Recipes, Pelts, animalType, animalRecord, npc, jsonRecord, patch);
-    helpers.addProgress(1);
+    helpers.addProgress(progressNumber);
     if (debugging)
       console.log(7);
     CarcassSizes(aiIndex, animalType, jsonRecord, patch);
-    helpers.addProgress(1);
+    helpers.addProgress(progressNumber);
     if (debugging)
       console.log(8);
     ActiveAnimalSwitches(aiIndex, animalType, jsonRecord, patch);
-    helpers.addProgress(1);
+    helpers.addProgress(progressNumber);
     if (debugging)
       console.log(9);
     BloodTypes(aiIndex, animalType, jsonRecord, patch);
-    helpers.addProgress(1);
+    helpers.addProgress(progressNumber);
     if (debugging)
       console.log(10);
     DefaultPeltValues(animalType, npc, patch, Pelts);
-    helpers.addProgress(1);
+    helpers.addProgress(progressNumber);
     if (debugging)
       console.log(11);
     MeatTypes(aiIndex, animalType, jsonRecord, patch);
-    helpers.addProgress(1);
+    helpers.addProgress(progressNumber);
     if (debugging)
       console.log(12);
     AllMeatWeights(aiIndex, animalType, jsonRecord, patch);
-    helpers.addProgress(1);
+    helpers.addProgress(progressNumber);
     if (debugging)
       console.log(13);
     NegativeTreasure(aiIndex, animalType, animalRecord, jsonRecord, patch);
-    helpers.addProgress(1);
+    helpers.addProgress(progressNumber);
     if (debugging)
       console.log(14);
     SharedDeathItems(aiIndex, animalType, jsonRecord, patch);
-    helpers.addProgress(1);
+    helpers.addProgress(progressNumber);
     if (debugging)
       console.log(15);
     VenomTypes(aiIndex, animalType, jsonRecord, patch);
-    helpers.addProgress(1);
+    helpers.addProgress(progressNumber);
     if (debugging)
       console.log(16);
     FreshCarcassMsgBoxes(aiIndex, animalType, jsonRecord, patch);
-    helpers.addProgress(1);
+    helpers.addProgress(progressNumber);
     if (debugging)
       console.log(17);
     AnimalIndex(aiIndex, animalType, jsonRecord, patch);
-    helpers.addProgress(1);
+    helpers.addProgress(progressNumber);
     if (debugging)
       console.log(18);
     ModifyDeathItem(npc, patch);
-    helpers.addProgress(1);
+    helpers.addProgress(progressNumber);
     if (debugging)
       console.log(19);
   }
@@ -1013,26 +1013,13 @@ registerPatcher({
     defaultSettings: {}
   },
   execute: (patch, helpers, settings, locals) => ({
-    customProgress: function (patch, helpers, settings) {
-      CheckPatches();
-      cacheRecords(flstRecords, 'FLST');
-      loadKnownDeathItemsMonsters();
-      loadKnownDeathItemsAnimals();
-      let deathitems = new Set();
-      xelib.WithHandles(xelib.GetRecords(0, 'NPC_'), function (records) {
-        records.forEach(rec => {
-          rec = xelib.GetWinningOverride(rec);
-          if (!xelib.LongName(rec) || !isCreature(rec))
-            return;
-          else
-            deathitems.add(xelib.GetRefEditorID(rec, 'INAM'));
-        });
-      });
-      return deathitems.size * 19;
+    customProgress: function (filesToPatch) {
+	  return 10000;
     },
     initialize: function (patch, helpers, settings) {
       if (!settings.items)
         return;
+	  progressNumber = (10000 / (Object.keys(settings.items).length * 19));
       let recordsToPatch = [];
       CheckPatches();
       cacheRecords(cobjRecords, 'COBJ');
